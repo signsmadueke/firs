@@ -1,0 +1,233 @@
+*::selection {
+    background-color: rgba(0, 107, 255, 0.2) !important;
+    color: #0069ff !important;
+}
+
+img {
+    -webkit-user-drag: none !important;
+    -moz-user-drag: none !important;
+    -o-user-drag: none !important;
+    user-drag: none !important;
+}
+
+.btn-primary.auth,
+.btn-secondary.auth {
+    padding: 0.8em 2em;
+    text-transform: none;
+    text-transform: capitalize;
+    font-weight: normal;
+    letter-spacing: 0px;
+    border-width: 1px;
+    font-size: 14px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1.2em 2.2em;
+}
+
+#navigation {
+    padding: 10px;
+}
+
+#navigation.show-on-scroll {
+    padding: 10px;
+    box-shadow: 0 26px 30px -14px rgba(0, 106, 255, 0.08);
+}
+
+#hero-lg .bg {
+    height: 100vh;
+    padding-top: 270px;
+    background-image: url('../../img/hero.svg');
+    background-size: 79%;
+    background-position: 48vw 15vh;
+    background-repeat: no-repeat;
+}
+
+#hero-sm {
+    height: 920px;
+    min-height: 100vh;
+    padding-top: 270px;
+}
+
+#hero-sm .bg {
+    background-image: url('../../img/hero.svg');
+    background-size: 875px;
+    background-position: center 550px;
+    background-repeat: no-repeat;
+}
+
+#plan-blurbs #blurb {
+    box-shadow: 0 26px 30px -14px rgba(0, 106, 255, 0.09);
+    background-position: 180% 150%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#plan-blurbs h4 span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #0069ff !important;
+    font-weight: normal;
+}
+
+#plan-blurbs #blurb h4 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#plan-blurbs #blurb p {
+    flex: 1;
+    height: 150px;
+}
+
+.span-info {
+    font-size: 11px;
+    letter-spacing: 2px;
+    background-color: rgb(235, 243, 255) !important;
+    color: #0069ff !important;
+    font-weight: bolder;
+    border-radius: 1em !important;
+    padding: 3px;
+}
+
+.plan-blurb {
+    background-image: url('../../img/patterns/card-plan.svg');
+}
+
+.save-blurb {
+    background-image: url('../../img/patterns/card-save.svg');
+}
+
+.invest-blurb {
+    background-image: url('../../img/patterns/card-invest.svg');
+}
+
+#plan-blurbs .bg-wrap {
+    background: #f4f8fc;
+}
+
+#juice {
+    background-image: url('../../img/patterns/home-device-section.svg');
+    background-repeat: no-repeat;
+    background-position: -110% 120px;
+    background-size: 68%;
+    padding-bottom: 120px;
+}
+
+#juice .video-iframe {
+    box-shadow: 0 26px 30px -14px rgba(0, 106, 255, 0.09);
+}
+
+#juice .video-iframe video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#juice .bg {
+    background-size: auto 120vh;
+    background-image: url('../../img/patterns/home-device-section.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#testimony-yinka .bg-box {
+    background-image: url('../../img/customers/yinka-testimonial.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#testimony-yinka .bg-wrap {
+    background: #f4f8fc;
+}
+
+#money-growth .bg {
+    opacity: 1;
+    background-size: auto 120vh;
+    background-image: url('../../img/patterns/ptn-03.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#login-cta .bg {
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0) 35%,rgb(255, 255, 255) 100%), url(../../img/bg-75.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
+#goals .plan-box {
+    background-image: url('../../img/goals.svg');
+    background-size: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 68vh;
+    width: 100%
+}
+
+@media screen and (max-width: 600px) {
+    #goals .plan-box {
+        height: 40vh;
+        background-position: center
+    }
+}
+
+#goals .goal-box-cover .goal-box {
+    background-image: url('../../img/plans.png');
+    background-repeat: repeat-y;
+    height: 50000%;
+    width: 100%;
+    background-position: center center;
+    background-size: 100% auto;
+    position: absolute;
+    top: 30px;
+    animation: scrollPlans 7000s linear infinite;
+}
+
+#goals .goal-box-cover {
+    overflow: hidden;
+    height: 55vh;
+    position: relative;
+}
+
+#goals .goal-box-cover:before, #goals .goal-box-cover:after {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #fff 100%);
+    left: 0;
+    z-index: 10;
+}
+
+#goals .goal-box-cover:before {
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #fff 100%);
+    left: 0;
+    z-index: 10;
+}
+
+#goals .goal-box-cover:after {
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0) 0%, #fff 100%);
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes scrollPlans {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(0, -100%, 0)
+    }
+}
