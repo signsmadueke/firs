@@ -24,22 +24,28 @@
                 </a>
             </div>
             <h4 class="auth-header">
-                Login OTP
+                Login to your account
             </h4>
-            <form method="post" data-toggle="validator" role="form" action="dashboard/" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
+            <form method="post"  data-toggle="validator" role="form"action="otp.php" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
+
+                <div class="form-group has-feedback">
+                    <label for="username">Email or Phone Number</label>
+                    <input name="username" class="form-control" placeholder="Enter your email or phone number" id="username" value="<?php if(isset($_COOKIE['remember_me'])){
+                        echo $_COOKIE['remember_me'];
+                    } ?>">
+                    <div class="pre-icon os-icon os-icon-user-male-circle"></div>
+                </div>
                 <div class="form-group">
-                    <input name="password" class="form-control" id="password" placeholder="Input your OTP" type="password">
+                    <label for="password">Password</label>
+                    <input name="password" class="form-control" id="password" placeholder="Enter your password" type="password">
                     <div class="pre-icon os-icon os-icon-fingerprint"></div>
                 </div>
+                <div class="custom-control custom-checkbox">
+                    <input name="remember" type="checkbox" checked class="custom-control-input" id="defaultChecked">
+                    <label class="custom-control-label" for="defaultChecked">Remember Me</label>
+                </div>
                 <div class="buttons-w text-center pt-4">
-                    <input class="btn btn-primary btn-block" value="Log in" type="submit" name="submit">
-                    <div class="row pt-2">
-                        <div class="col-sm-12 pt-2">
-                            <div class="text-center">
-                                <label class="form-check-label">Enter the OTP that was sent to your account email</label>
-                            </div>
-                        </div>
-                    </div>
+                    <input class="btn btn-primary btn-block" value="Continue" type="submit" name="submit">
                 </div>
                 <div class="row">
                     <div class="col-sm-12 pt-4 text-center">
