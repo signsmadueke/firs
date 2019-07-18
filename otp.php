@@ -1,8 +1,47 @@
+<?php 
+require_once 'core/init.php'; 
+if (Input::exists() OR Input::exists('get')) {
+    if (is_null(Input::get('u')) OR empty(Input::get('u')) OR Input::get('u') == '') {
+        Session::flash('login', 'Unauthorize access');
+        Redirect::to('login.php');
+    }
+    $user = new User();
+    if (!$user->find(Input::get('u'))) {
+        Session::flash('login', 'Unauthorize access');
+        Redirect::to('login.php');
+    }
+    if (Token::check(Input::get('token')) && Input::get('u')) {
+        
+        $validate = new Validate();
+        $validation = $validate->check($_POST, array(
+            'otp' => array('required' => true),
+        ));
+
+        if ($validation->passed()) {
+
+            $login = $user->otp(Input::get('otp'), Input::get('u'));
+
+            if ($login) {
+                Redirect::to('dashboard.php');
+            }else {
+                Session::flash('login', 'Sorry OTP not correct');
+                Redirect::to('login.php');
+            }
+        } else {
+            foreach ($validation->errors() as $error) {
+                echo $error.'<br>';
+            }
+        }
+    }
+} else {
+    Redirect::to('login.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Login — Perpetuity.ng</title>
+    <title>Login — firs</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="template language" name="keywords">
@@ -26,7 +65,7 @@
             <h4 class="auth-header">
                 Login OTP
             </h4>
-            <form method="post" data-toggle="validator" role="form" action="dashboard/" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
+            <form method="post" data-toggle="validator" role="form" action="" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
                 <div class="form-group">
                     <input name="password" class="form-control" id="password" placeholder="Input your OTP" type="password">
                     <div class="pre-icon os-icon os-icon-fingerprint"></div>
@@ -50,6 +89,7 @@
                         <?php } ?>
                     </div>
                 </div>
+                <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
             </form>
         </div>
     </div>
