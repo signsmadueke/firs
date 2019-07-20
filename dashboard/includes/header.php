@@ -38,14 +38,14 @@
                 </div>
                 <div class="menu-and-user" style="padding-bottom: 0;">
                     <div class="logged-user-w">
-                        <a href=".."/profile>
+                        <a href="../profile">
                             <div class="avatar-w">
-                                <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
+                                <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
                             </div>
                         </a>
                         <div class="logged-user-info-w">
                             <div class="logged-user-name mb-1">
-                                Signs Madueke
+                                <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                             </div>
                             <div class="logged-user-role">User</div>
                         </div>
@@ -148,11 +148,11 @@
                 <div <?php if ($title == "Dashboard"){echo "class=\"border-0 logged-user-w avatar-inline\"";} else{echo "class=\"logged-user-w avatar-inline\"";} ?>>
                     <div class="logged-user-i">
                         <div class="avatar-w">
-                            <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
+                            <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
                         </div>
                         <div class="logged-user-info-w">
                             <div class="logged-user-name mb-1">
-                                Signs Madueke
+                                <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                             </div>
                             <div class="logged-user-role">User</div>
                         </div>
@@ -163,11 +163,11 @@
                             <a href="../profile">
                                 <div class="logged-user-avatar-info">
                                     <div class="avatar-w">
-                                        <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
+                                        <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
                                     </div>
                                     <div class="logged-user-info-w">
                                         <div class="logged-user-name mb-1">
-                                            Signs Madueke
+                                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                                         </div>
                                         <div class="logged-user-role">
                                             User
@@ -252,7 +252,7 @@
                         <img width="70px" src="../../assets/img/firs.png" alt="FIRS">
                     </div>
                     <div class="col-12 text-center p-0">
-                        <p class="label m-0">Copyright © 2016 SQIM</p>
+                        <p class="label m-0">Copyright © <?php echo date('Y'); ?> SQIM</p>
                     </div>
                 </div>
             </div>

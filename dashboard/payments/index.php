@@ -1,11 +1,18 @@
 <?php
+require_once 'core/init.php';
+
+$user = new User();
+$payment = new Payment();
+if (!$user->isLoggedIn()) {
+    Redirect::to('../login.php');
+}
     $title = 'Payments';
     require_once '../includes/header.php';
     // require_once '../includes/bgcolor.php';
     // require_once '../includes/chat.php';
 ?>
 <div class="content-box">
-    <div class="row">
+    <div class="row col-sm-11">
         <div class="col-md-12 col-sm-12 col-lg-10">
             <div class="element-wrapper">
                 <h6 class="element-header">
@@ -29,13 +36,19 @@
                     </div>
                 </div>
                 <div class="element-box">
-                    <form>
+                    <form method="post" action="payment_status_update.php">
                         <div class="steps-w">
                             <div class="step-trikkers">
                                 <a class="step-trikker active" href="">Payments</a>
                                 <a class="step-trikker" href="pending.php">Pending</a>
                                 <a class="step-trikker" href="approved.php">Approved</a>
                             </div>
+                            <?php  
+                            if (Session::exists('payment')) { ?>
+                                <div class="alert alert-info">
+                                    <?php echo Session::flash('payment'); ?>
+                                </div>
+                            <?php } ?>
                             <div class="step-contents">
                                 <div class="step-content active p-0">
                                     <div class="w-100" style="overflow: hidden;">
@@ -73,196 +86,42 @@
                                                 </tr>
                                             </tfoot>
                                             <tbody>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td>₦180,000.00</td>
-                                                    <td></td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-                                                    </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
+                                                <?php foreach ($payment->readAll() as $row) {?>
+                                                    <tr class="">
+                                                        <td class="p-0">
+                                                            <?php if ($row->payment_status == 0) {?>
+                                                                <input type="checkbox" class="checkbox" name="acs[<?php echo $row->payment_id; ?>]" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                            <?php
+                                                            } 
+                                                            ?>
+                                                            <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
+                                                        </td>
+                                                        <td><?php echo $row->vendor; ?></td>
+                                                        <td><?php echo $row->payment_purpose ?></td>
+                                                        <td><?php echo $row->payment_from; ?></td>
+                                                        <td><span><?php echo date('M jS', $row->payment_time); ?></span><span class="smaller lighter"><?php echo date('h:ia', $row->payment_time); ?></span></td>
+                                                        <td class="text-center">
+                                                            <?php if ($row->payment_status == 0) {?>
+                                                                <span class="badge badge-info-inverted" href="">Final Approval</span>
+                                                            <?php
+                                                            } else {
+                                                            ?>
+                                                                <span class="badge badge-primary-inverted" href="">Approved</span>
+                                                            <?php 
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <td>₦<?php echo number_format($row->amount); ?></td>
+                                                        <td>₦<?php echo number_format($row->net_amount); ?></td>
+                                                        <td>₦<?php echo number_format($row->WHT); ?></td>
+                                                        <td><?php echo $row->ref; ?></td>
+                                                        <td>₦<?php echo number_format($row->VAT); ?></td>
+                                                        <td>₦<?php echo number_format($row->levies); ?></td>
+                                                    </tr>
+                                                    <?php
+                                                } 
+                                                ?>
+                                                
                                             </tbody>
                                         </table>
                                     </div>

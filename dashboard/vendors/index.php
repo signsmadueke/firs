@@ -1,4 +1,11 @@
 <?php
+require_once 'core/init.php';
+
+$user = new User();
+$payment = new Vendor();
+if (!$user->isLoggedIn()) {
+    Redirect::to('../login.php');
+}
     $title = 'Vendors';
     require_once '../includes/header.php';
     // require_once '../includes/bgcolor.php';
@@ -34,7 +41,7 @@
                             <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                                 <thead>
                                     <tr class="">
-                                        <th></th>
+                                        <th>#</th>
                                         <th>Vendor</th>
                                         <th>Name</th>
                                         <th>Email</th>
@@ -47,7 +54,7 @@
                                 </thead>
                                 <tfoot>
                                     <tr class="">
-                                        <th></th>
+                                        <th>#</th>
                                         <th>Vendor</th>
                                         <th>Name</th>
                                         <th>Email</th>
@@ -59,212 +66,20 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>APTECH</td>
-                                        <td>WILLIE AKPAN</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>08093618346</td>
-                                        <td>00014</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>CJ</td>
-                                        <td>Emeka Okeke</td>
-                                        <td>okechukwu008@gmail.com</td>
-                                        <td>08143558589</td>
-                                        <td>1231</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>EBONYI CENTRAL LTD</td>
-                                        <td>MARY HENRY</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>07030144572</td>
-                                        <td>221452-0001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>FEROTEX</td>
-                                        <td>FEROTEX NG</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>08032568448</td>
-                                        <td>03623651-0001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>FIRS</td>
-                                        <td>FIRS ENUGU</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>0202154587</td>
-                                        <td>00000001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>GUBBA VENTURES</td>
-                                        <td>MMADU CHRISTOPHER</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>08093618346</td>
-                                        <td>0011</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>Joy Enterprises</td>
-                                        <td>Joy Okeke</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>07086405522</td>
-                                        <td>00001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>JULIOUD BERGER</td>
-                                        <td>Elijah Basi</td>
-                                        <td>chijiokemadu@gmail.com</td>
-                                        <td>02012356478</td>
-                                        <td>1232123451-0001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>SETRACO NIGERIA LTD</td>
-                                        <td>SETRACO NG</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>08038784020</td>
-                                        <td>01059151-0001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                        <td>DANIEL ONIFADE</td>
-                                        <td>OYEYEONIFADE@GMAIL.COM</td>
-                                        <td>0801234568</td>
-                                        <td>01259320-0001</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td class="p-0">
-                                            <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                        </td>
-                                        <td>WESTGATE</td>
-                                        <td>CHARLES MADEKWE</td>
-                                        <td>agftaxsolution@gmail.com</td>
-                                        <td>0801256212</td>
-                                        <td>00128</td>
-                                        <td>EBONYI</td>
-                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                        <td class="action">
-                                            <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
-                                            <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                            <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="row pt-0">
-                                <div class="col-sm-12 col-md-12 col-lg-7 mb-2"></div>
-                                <div class="col-sm-12 col-md-4 col-lg-2 mb-2">
-                                    <a href="#" onclick="selectAll()" id="checker" class="btn-block mt-3 p-3 btn btn-white"><i class="icon-plus mr-3"></i>Select All</a>
-                                </div>
-                                <div class="col-sm-12 col-md-8 col-lg-3 mb-2">
-                                    <a class="p-3 mt-3 btn btn-danger btn-block" href="#" data-target="#deletemultiple" data-toggle="modal"><i class="icon-feather-trash mr-2"></i>Delete Selected</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-1"></div> 
-    </div>
-    <div aria-hidden="true" class="onboarding-modal modal fade animated" id="pay" role="dialog" tabindex="-1">
+                                    <?php if ($vendor->readAll() !== false) {
+                                        foreach ($vendor->readAll() as $v) {?>
+                                            <tr class="">
+                                                <td class="p-0"><?php echo $v->vendor_id; ?></td>
+                                                <td><?php echo $v->vendor_name; ?></td>
+                                                <td><?php echo $v->contact_firstname.' '.$v->contact_lastname; ?></td>
+                                                <td><?php echo $v->email; ?></td>
+                                                <td><?php echo $v->phone_no; ?></td>
+                                                <td><?php echo $v->TIN; ?></td>
+                                                <td><?php echo $v->state; ?></td>
+                                                <td><span><?php echo date('M jS', $v->date_created); ?></span><span class="smaller lighter"><?php echo date('h:ia', $v->date_created); ?></span></td>
+                                                <td class="action">
+                                                    <a class="btn btn-primary btn-sm" href="#" data-target="#pay<?php echo $v->vendor_id; ?>" data-toggle="modal">Pay</a>
+                                                     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="pay<?php echo $v->vendor_id; ?>" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-lg modal-centered" role="document">
             <div class="modal-content text-center">
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
@@ -273,13 +88,13 @@
                         Pay Vendor
                     </h4>
                     <div class="onboarding-text">
-                        Pay Emeka Okeke
+                        Pay <?php echo $v->contact_firstname.' '.$v->contact_lastname; ?>
                     </div>
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="lname">Vendor Name</label><input name="vname" value="Afrivelle" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: Afrivelle Technologies" required="required" type="text">
+                                    <label for="lname">Vendor Name</label><input name="vname" value="<?php echo $v->vendor_name; ?>" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: Afrivelle Technologies" required="required" type="text">
                                     <div class="help-block form-text with-errors form-control-feedback"></div>
                                 </div>
                             </div>
@@ -288,7 +103,7 @@
                                     <label for="fname">Amount</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend"><div class="input-group-text">₦</div></div>
-                                        <input name="amount" value="5000" class="form-control" data-error="Please input the Amount to pay" placeholder="eg: 10000" required="required" type="text">
+                                        <input name="amount" value="" class="form-control" data-error="Please input the Amount to pay" placeholder="eg: 10000" required="required" type="text">
                                         <div class="help-block form-text with-errors form-control-feedback"></div>
                                     </div>
                                 </div>
@@ -381,6 +196,33 @@
             </div>
         </div>
     </div>
+                                                    <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                                    <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <?php 
+                                        }
+                                    } 
+                                    ?>
+                                </tbody>
+                            </table>
+                            <div class="row pt-0">
+                                <div class="col-sm-12 col-md-12 col-lg-7 mb-2"></div>
+                                <div class="col-sm-12 col-md-4 col-lg-2 mb-2">
+                                    <a href="#" onclick="selectAll()" id="checker" class="btn-block mt-3 p-3 btn btn-white"><i class="icon-plus mr-3"></i>Select All</a>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-3 mb-2">
+                                    <a class="p-3 mt-3 btn btn-danger btn-block" href="#" data-target="#deletemultiple" data-toggle="modal"><i class="icon-feather-trash mr-2"></i>Delete Selected</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div> 
+    </div>
+   
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="edit" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-lg modal-centered" role="document">
             <div class="modal-content text-center">

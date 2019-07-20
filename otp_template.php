@@ -6,16 +6,16 @@
         <table style="width: 100%;">
             <tr>
                 <td style="border-radius: 10px;background-color: #fff;">
-                    <img alt="" src="http://localhost/firs/assets/img/firs.png" style="width: 60px;padding: 20px">
+                    <img alt="" src="http://#logo#" style="width: 60px;padding: 20px">
                 </td>
                 <td style="border-radius: 10px;padding-left: 50px;text-align: right;padding-right: 40px;">
-                    <a href="#" style="color: #007252;text-decoration: none;font-size: 14px;">Sign In</a>
-                    <a href="#" style="color: #007252;text-decoration: none;font-size: 14px;margin-left: 20px;">Forgot Password</a>
+                    <a href="#login#" style="color: #007252;text-decoration: none;font-size: 14px;">Sign In</a>
+                    <!-- <a href="#" style="color: #007252;text-decoration: none;font-size: 14px;margin-left: 20px;">Forgot Password</a> -->
                 </td>
             </tr>
         </table>
         <div style="padding: 60px 70px;border-top: 1px solid rgba(0,0,0,0.05);">
-            <h1 style="font-weight: normal; line-height: 45px;">Your verification code is <span style="font-weight: bolder;font-family: 'Circular Std Bold', 'Google Sans Bold', sans-serif;">1607CC8139</span>
+            <h1 style="font-weight: normal; line-height: 45px;">Your verification code is <span style="font-weight: bolder;font-family: 'Circular Std Bold', 'Google Sans Bold', sans-serif;">#otp#</span>
             </h1>
             <p style="color: #636363;font-weight: normal;padding: 30.1px 0px;border-top: 1px solid rgba(0,0,0,0.08);margin: 0;">
                 You're receiving this mail because your username is requestion to login on AGF Tax Solution portal.

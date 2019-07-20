@@ -1,8 +1,43 @@
+<?php
+require_once 'core/init.php';
+$user = new User();
+if ($user->isLoggedIn()) {
+    Redirect::to('dashboard/');
+}
+
+if (Input::exists()) {
+    if (Token::check(Input::get('token'))) {
+        
+        $validate = new Validate();
+        $validation = $validate->check($_POST, array(
+            'username' => array('required' => true),
+            'password' => array('required' => true)
+        ));
+
+        if ($validation->passed()) {
+
+            // $remember = (Input::get('remember') === 'on') ? true : false;
+            $login = $user->initialLogin(Input::get('username'), Input::get('password'));
+            // die(var_dump($login));
+
+            if ($login !== false) {
+                Redirect::to('otp.php?u='.$login);
+            }else {
+                Session::flash('login', 'Sorry on able to login');
+                Redirect::to('login.php');
+            }
+        } else {
+            $errors = $validation->errors();
+        }   
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Login — Perpetuity.ng</title>
+    <title>Login — firs</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="template language" name="keywords">
@@ -26,8 +61,22 @@
             <h4 class="auth-header">
                 Login to your account
             </h4>
-            <form method="post"  data-toggle="validator" role="form"action="otp.php" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
-
+            <form method="post"  data-toggle="validator" role="form"action="" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
+                <div class="col-sm-12 pt-4 text-center">
+                    <?php if (isset($errors)) { 
+                        foreach ($errors as $error) { ?>
+                        <div class="alert alert-danger">
+                                <?php echo $error; ?>
+                        </div>
+                    <?php 
+                        }
+                    }
+                    if (Session::exists('login')) { ?>
+                        <div class="alert alert-danger">
+                                <?php echo Session::flash('login'); ?>
+                        </div>
+                    <?php } ?>
+                </div>
                 <div class="form-group has-feedback">
                     <label for="username">Email or Phone Number</label>
                     <input name="username" class="form-control" placeholder="Enter your email or phone number" id="username" value="<?php if(isset($_COOKIE['remember_me'])){
@@ -47,15 +96,7 @@
                 <div class="buttons-w text-center pt-4">
                     <input class="btn btn-primary btn-block" value="Continue" type="submit" name="submit">
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 pt-4 text-center">
-                        <?php if (isset($error)) { ?>
-                            <div class="alert alert-danger">
-                                    <?php echo $error; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
+                <input type="hidden" name="token" value="<?php echo Token::generate() ?>">
             </form>
         </div>
     </div>

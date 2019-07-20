@@ -1,11 +1,18 @@
 <?php
+require_once 'core/init.php';
+
+$user = new User();
+$payment = new Payment();
+if (!$user->isLoggedIn()) {
+    Redirect::to('../login.php');
+}
     $title = 'Payments';
     require_once '../includes/header.php';
     // require_once '../includes/bgcolor.php';
     // require_once '../includes/chat.php';
 ?>
 <div class="content-box">
-    <div class="row">
+    <div class="row col-sm-5">
         <div class="col-md-12 col-sm-12 col-lg-11">
             <div class="element-wrapper">
                 <h6 class="element-header">

@@ -1,4 +1,15 @@
-<?php
+<?php 
+require_once 'core/init.php';
+
+if (Session::exists('home')) {
+    echo '<p>' . Session::flash('home'). '</p>';
+}
+
+$user = new User();
+$payment = new Payment();
+if (!$user->isLoggedIn()) {
+    Redirect::to('../login.php');
+}
     $title = 'Dashboard';
 ?>
 <!DOCTYPE html>
@@ -40,13 +51,13 @@
                 </div>
                 <div class="menu-and-user" style="padding-bottom: 0;">
                     <div class="logged-user-w">
-                        <a href=".."/profile> <div class="avatar-w">
+                        <a href="../profile"> <div class="avatar-w">
                             <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
                     </div>
                     </a>
                     <div class="logged-user-info-w">
                         <div class="logged-user-name mb-1">
-                            Signs Madueke
+                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                         </div>
                         <div class="logged-user-role">User</div>
                     </div>
@@ -149,11 +160,11 @@
             <div <?php if ($title == "Dashboard"){echo "class=\"border-0 logged-user-w avatar-inline\"";} else{echo "class=\"logged-user-w avatar-inline\"";} ?>>
                 <div class="logged-user-i">
                     <div class="avatar-w">
-                        <img alt="" src="../assets/img/avatar1.jpg" style="background: white;">
+                        <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
                     </div>
                     <div class="logged-user-info-w">
                         <div class="logged-user-name mb-1">
-                            Signs Madueke
+                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                         </div>
                         <div class="logged-user-role">User</div>
                     </div>
@@ -164,11 +175,11 @@
                         <a href="profile/">
                             <div class="logged-user-avatar-info">
                                 <div class="avatar-w">
-                                    <img alt="" src="../assets/img/avatar1.jpg" style="background: white;">
+                                    <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
                                 </div>
                                 <div class="logged-user-info-w">
                                     <div class="logged-user-name mb-1">
-                                        Signs Madueke
+                                        <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
                                     </div>
                                     <div class="logged-user-role">
                                         User
@@ -253,7 +264,7 @@
                     <img width="70px" src="../assets/img/firs.png" alt="FIRS">
                 </div>
                 <div class="col-12 text-center p-0">
-                    <p class="label m-0">Copyright © 2016 SQIM</p>
+                    <p class="label m-0">Copyright © <?php echo date('Y'); ?> SQIM</p>
                 </div>
             </div>
         </div>
@@ -274,25 +285,25 @@
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">Payments This Month</div>
-                                            <div class="value"><strong>₦574</strong></div>
+                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('total_amount')); ?> </strong></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">VAT This Month</div>
-                                            <div class="value"><strong>₦12</strong></div>
+                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('vat')); ?></strong></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">WHT This Month</div>
-                                            <div class="value"><strong>₦2</strong>,507</div>
+                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('wht')); ?></strong></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">Stamp Duty This Month</div>
-                                            <div class="value"><strong>₦2,507</strong></div>
+                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('stamp_duty')); ?></strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -315,7 +326,7 @@
                                                 Total Payments
                                             </div>
                                             <div class="value">
-                                                4
+                                                <?php echo $payment->t_payment(); ?>
                                             </div>
                                         </div>
 
@@ -324,7 +335,7 @@
                                                 Completed Payments
                                             </div>
                                             <div class="value">
-                                                3
+                                                <?php echo $payment->completed_payment(); ?>
                                             </div>
                                         </div>
 
@@ -333,7 +344,7 @@
                                                 Pending Payments
                                             </div>
                                             <div class="value">
-                                                0
+                                                <?php echo $payment->pending_payment(); ?>
                                             </div>
                                         </div>
                                     </div>
@@ -362,7 +373,21 @@
                                                         </tr>
                                                     </tfoot>
                                                     <tbody>
-                                                        <tr>
+                                                        <?php foreach ($payment->readAll() as $pay) {?>
+                                                            <tr>
+                                                                <td><?php echo $pay->payment_id; ?></td>
+                                                                <td><?php echo $pay->vendor; ?></td>
+                                                                <td><?php echo $pay->payment_purpose; ?></td>
+                                                                <td class="text-center">
+                                                                    <span class="badge badge-primary-inverted" href=""><?php if ($pay->status == 1) {echo "Final Approval";} else {echo "Approved";} ?></span>
+                                                                </td>
+                                                                <td>₦<?php echo number_format($pay->VAT); ?></td>
+                                                                <td>₦ <?php echo number_format($pay->amount); ?></td>
+                                                            </tr>
+                                                        <?php 
+                                                        } 
+                                                        ?>
+                                                        <!-- <tr>
                                                             <td>2214</td>
                                                             <td>UBIQUITE SOLUTIONS LTD</td>
                                                             <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
@@ -411,17 +436,7 @@
                                                             </td>
                                                             <td>₦40,000</td>
                                                             <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td>UBIQUITE SOLUTIONS LTD</td>
-                                                            <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="text-center">
-                                                                <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                            </td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
+                                                        </tr> -->
                                                     </tbody>
                                                 </table>
                                             </div>
