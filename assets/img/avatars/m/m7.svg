@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="280" viewBox="0 0 264 280">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="264" height="280" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Body" d="M0,244v-9a72,72,0,0,1,72-72h4V144.611a56.038,56.038,0,0,1-31.694-44.73A12,12,0,0,1,34,88V74A12,12,0,0,1,44,62.166V56a56,56,0,0,1,112,0v6.166A12,12,0,0,1,166,74V88a12,12,0,0,1-10.305,11.881A56.038,56.038,0,0,1,124,144.611V163h4a72,72,0,0,1,72,72v9Z" fill="#d0c6ac"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="200" height="80.78" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Clothes" d="M200,80.78H0V71.833A71.947,71.947,0,0,1,67.045,0C67.015.37,67,.749,67,1.128c0,5.738,3.485,11.132,9.812,15.189s14.74,6.291,23.689,6.291,17.361-2.234,23.688-6.291S134,6.866,134,1.128c0-.349-.013-.7-.04-1.052A72.006,72.006,0,0,1,200,71.833v8.947Z" transform="translate(32 29.22)" fill="#e6e6e6"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect width="28" height="14" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect width="24" height="8" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect width="64" height="12" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect width="88.001" height="11.922" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-10">
+      <rect fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Avataaar_Default" data-name="Avataaar/Default" clip-path="url(#clip-path)">
+    <g id="Body-2" data-name="Body" transform="translate(32 36)">
+      <path id="Body-3" data-name="Body" d="M0,244v-9a72,72,0,0,1,72-72h4V144.611a56.038,56.038,0,0,1-31.694-44.73A12,12,0,0,1,34,88V74A12,12,0,0,1,44,62.166V56a56,56,0,0,1,112,0v6.166A12,12,0,0,1,166,74V88a12,12,0,0,1-10.305,11.881A56.038,56.038,0,0,1,124,144.611V163h4a72,72,0,0,1,72,72v9Z" fill="#d0c6ac"/>
+      <g id="Body-4" data-name="Body" clip-path="url(#clip-path-2)">
+        <g id="_Skin" data-name="🎨 Skin" transform="translate(-32)">
+          <rect id="_Skin_background" data-name="🎨 Skin background" width="264" height="244" fill="rgba(0,0,0,0)"/>
+          <rect id="Color" width="244" height="244" fill="#d08b5b"/>
+        </g>
+        <path id="Neck_Shadow" data-name="Neck Shadow" d="M56,79A55.825,55.825,0,0,1,16.4,62.6,55.825,55.825,0,0,1,0,23V15.477a56,56,0,0,0,112-.451V23A56.063,56.063,0,0,1,77.8,74.6,55.65,55.65,0,0,1,56,79Z" transform="translate(44 79)" fill="rgba(0,0,0,0.1)"/>
+      </g>
+    </g>
+    <g id="_Clothes" data-name="👔 Clothes" transform="translate(32 199.22)" clip-path="url(#clip-path-3)">
+      <path id="Clothes-2" data-name="Clothes" d="M200,80.78H0V71.833A71.947,71.947,0,0,1,67.045,0C67.015.37,67,.749,67,1.128c0,5.738,3.485,11.132,9.812,15.189s14.74,6.291,23.689,6.291,17.361-2.234,23.688-6.291S134,6.866,134,1.128c0-.349-.013-.7-.04-1.052A72.006,72.006,0,0,1,200,71.833v8.947Z" transform="translate(0 -0.001)" fill="#e6e6e6"/>
+      <g transform="translate(-32 -29.22)" clip-path="url(#clip-path-4)">
+        <g id="_Color_Fabric" data-name="↳ Color Fabric">
+          <rect id="_Color_Fabric_background" data-name="↳ Color Fabric background" width="264" height="110" fill="rgba(0,0,0,0)"/>
+          <rect id="_Color" data-name="🖍Color" width="264" height="110" fill="#e6e6e6"/>
+        </g>
+        <g id="Shadowy" transform="translate(92 4)" opacity="0.6">
+          <ellipse id="Hola_" data-name="Hola 👋🏼" cx="39.635" cy="26.914" rx="39.635" ry="26.914" transform="translate(0.865 0.934)" fill="rgba(0,0,0,0.16)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Face" transform="translate(76 82)">
+      <g id="_Mouth" data-name="👄 Mouth" transform="translate(42 67)" clip-path="url(#clip-path-5)">
+        <path id="Mouth" d="M0,0A14,14,0,0,0,14,14h0A14,14,0,0,0,28,0" fill="rgba(0,0,0,0.7)"/>
+      </g>
+      <g id="_Nose" data-name="👃🏽 Nose" transform="translate(44 48)" clip-path="url(#clip-path-6)">
+        <path id="Nose" d="M0,0C0,4.418,5.373,8,12,8h0c6.627,0,12-3.582,12-8" fill="rgba(0,0,0,0.16)"/>
+      </g>
+      <g id="_Eyes" data-name="👁 Eyes" transform="translate(24 24)" clip-path="url(#clip-path-7)">
+        <circle id="Eye" cx="6" cy="6" r="6" fill="rgba(0,0,0,0.6)"/>
+        <circle id="Eye-2" data-name="Eye" cx="6" cy="6" r="6" transform="translate(52)" fill="rgba(0,0,0,0.6)"/>
+      </g>
+      <g id="_Eyebrow" data-name="✏️ Eyebrow" transform="translate(12 6.078)" clip-path="url(#clip-path-8)">
+        <g id="I_Browse" data-name="I Browse" transform="translate(0 -0.078)">
+          <path id="Eyebrow" d="M3.63,11.08c3.915-5.509,14.648-8.6,23.893-6.327A2,2,0,1,0,28.477.868C17.741-1.768,5.312,1.809.37,8.763A2,2,0,0,0,3.63,11.08Z" transform="translate(0 0.078)" fill="rgba(0,0,0,0.6)"/>
+          <path id="Eyebrow-2" data-name="Eyebrow" d="M-3.63,11.08c-3.915-5.509-14.648-8.6-23.893-6.327a2,2,0,0,1-2.419-1.465A2,2,0,0,1-28.477.868C-17.741-1.768-5.312,1.809-.37,8.763a2,2,0,0,1-.472,2.789A2,2,0,0,1-3.63,11.08Z" transform="translate(88 0.078)" fill="rgba(0,0,0,0.6)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Top">
+      <rect id="Mask-2" data-name="Mask" width="264" height="280" fill="none"/>
+    </g>
+  </g>
+</svg>

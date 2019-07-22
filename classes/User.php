@@ -175,9 +175,9 @@ class User
 	{
 		return (!empty($this->_data)) ? true : false;
 	}
-	public function get_roles()
+	public function get_roles($table)
 	{
-		return $this->_db->get_group('user_roles');
+		return $this->_db->get_group($table);
 	}
 	public function data()
 	{

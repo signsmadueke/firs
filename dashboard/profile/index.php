@@ -150,12 +150,6 @@ require_once '../includes/header.php';
                                     </div>
                                 </div>
                                 <div class="row">
-                                   <!--  <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="phone">Phone Number</label><input name="phone" value="0801 234 5678" class="form-control" data-error="Your Phone Number is invalid" placeholder="eg: 0801 234 5678" type="tel" maxlength="11" minlength="11" autocomplete="tel" required="required">
-                                            <div class="help-block form-text with-errors form-control-feedback"></div>
-                                        </div>
-                                    </div> -->
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="email">Email address</label><input name="email" value="<?php echo $user->data()->email;?>" class="form-control" data-error="Your email address is invalid" placeholder="Enter email" autocomplete="email" required="required" type="email">
@@ -177,7 +171,7 @@ require_once '../includes/header.php';
                                         <div class="form-group">
                                             <label for="user_role">User Role</label>
                                             <select class="form-control" name="user_role">
-                                                <?php foreach ($user->get_roles() as $role) {?> ?>
+                                                <?php foreach ($user->get_roles('user_roles') as $role) {?> ?>
                                                 <option <?php if($user->data()->user_role == $role->role_id) {echo "selected";} ?> value="<?php echo $role->role_id; ?>"><?php echo $role->role_name; ?></option>
                                                 <?php 
                                                 } 
@@ -192,7 +186,6 @@ require_once '../includes/header.php';
                                         </div>
                                     </div>
                                 </div>
-                               <!--  <input type="hidden" name="token" value="<?php echo Token::generate(); ?>"> -->
                                 <div class="row pt-4">
                                     <div class="col-sm-12 col-md-4 mb-2">
                                         <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>
@@ -246,7 +239,6 @@ require_once '../includes/header.php';
                                         </div>
                                     </div>
                                 </div>
-                               <!--  <input type="hidden" name="token" value="<?php echo Token::generate(); ?>"> -->
                                 <div class="row pt-4">
                                     <div class="col-sm-12 col-md-4 mb-2">
                                         <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>

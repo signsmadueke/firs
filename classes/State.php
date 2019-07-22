@@ -21,7 +21,7 @@ class State
 		}
 	}
 
-	public function find_vendor($state =null)
+	public function find_state($state =null)
 	{
 		if ($state) {
 			$field = (is_numeric($state)) ? 'state_id' : 'state_name';
