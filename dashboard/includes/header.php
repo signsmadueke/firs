@@ -109,13 +109,6 @@
                                 <span>Ministries</span>
                             </a>
                         </li>
-                         <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
-                            <a href="../users">
-                                <div class="icon-w">
-                                    <div class="icon-people"></div>
-                                </div><span>Users</span>
-                            </a>
-                        </li>
                         <li>                        
                             <a href="../profile">
                                 <div class="icon-w">
@@ -251,14 +244,6 @@
                                 <div class="fa fa-university"></div>
                             </div>
                             <span>Ministries</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
-                        <a href="../users" class="">
-                            <div class="icon-w">
-                                <div class="icon-people"></div>
-                            </div>
-                            <span>Users</span>
                         </a>
                     </li>
                 </ul>

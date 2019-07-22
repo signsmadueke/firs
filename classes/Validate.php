@@ -35,6 +35,11 @@ class Validate {
                                 $this->addError("{$rule_value} must match {$item}");
                             }
                         break;
+                        // case 'match':
+                        //     if($value == $rule_value){
+                        //         $this->addError("{$item} must be a valid value");
+                        //     }
+                        // break;
                         case 'unique':
                             $check = $this->_db->get($rule_value, array($item, '=', $value));
                             // return var_dump($check);

@@ -40,55 +40,41 @@ if (!$user->isLoggedIn()) {
                         <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>
                                 <tr class="">
-									<th>Fee Name</th>
-									<th>State/MDA</th>
-									<th>Account Number</th>
-									<th>Bank</th>
-									<th>Value</th>
-									<th>Action</th>
+									<th>#</th>
+									<th>STATE NAME</th>
+									<th>DESCRIPTION</th>
+									<th>CODE</th>
+									<th>DATE CREATED</th>
+                                    <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr class="">
-									<th>Fee Name</th>
-									<th>State/MDA</th>
-									<th>Account Number</th>
-									<th>Bank</th>
-									<th>Value</th>
-									<th>Action</th>
+									<th>#</th>
+                                    <th>STATE NAME</th>
+                                    <th>DESCRIPTION</th>
+                                    <th>CODE</th>
+                                    <th>DATE CREATED</th>
+                                    <th>ACTION</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr class="">
-                                    <td>Development levy</td>
-									<td>EBONYI</td>
-									<td>0014025852</td>
-									<td>Union Bank PLC</td>
-									<td>NGN 1,000.000</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <td>Education levy</td>
-						            <td>EBONYI</td>
-						            <td>1125457852</td>
-						            <td>Standard Chartered Bank</td>
-						            <td>NGN 100.000</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <td>Stamp Duty</td>
-							         <td>EBONYI</td>
-							         <td>014010458</td>
-							         <td>Wema Bank</td>
-							         <td>1.000%</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
-                                    </td>
-                                </tr>
+                                <?php if ($state->readAll() !== false) {
+                                        foreach ($state->readAll() as $s) {?>
+                                            <tr class="">
+                                                <td><?php echo $s->state_id; ?></td>
+                                                <td><?php echo $s->state_name; ?></td>
+                                                <td><?php echo $s->state_description; ?></td>
+                                                <td><?php echo $s->state_TIN; ?></td>
+                                                <td><span><?php echo date('M jS', $v->date_created); ?></span><span class="smaller lighter"><?php echo date('h:ia', $v->date_created); ?></span></td>
+                                                <td class="action">
+                                                    <a class="btn btn-primary btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                                </td>
+                                            </tr>
+                                <?php 
+                                        }
+                                    } 
+                                ?>
                             </tbody>
                         </table>
                     </div>
