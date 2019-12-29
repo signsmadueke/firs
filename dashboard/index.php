@@ -1,15 +1,4 @@
-<?php 
-require_once 'core/init.php';
-
-if (Session::exists('home')) {
-    echo '<p>' . Session::flash('home'). '</p>';
-}
-
-$user = new User();
-$payment = new Payment();
-if (!$user->isLoggedIn()) {
-    Redirect::to('../login.php');
-}
+<?php
     $title = 'Dashboard';
 ?>
 <!DOCTYPE html>
@@ -41,7 +30,6 @@ if (!$user->isLoggedIn()) {
                 <div class="mm-logo-buttons-w">
                     <a class="mm-logo" href="/">
                         <img src="../assets/img/logo-x2.png" alt="logo" style="height: 35px;">
-                        <span>National Accountant General Tax Solution</span>
                     </a>
                     <div class="mm-buttons">
                         <div class="mobile-menu-trigger">
@@ -51,13 +39,13 @@ if (!$user->isLoggedIn()) {
                 </div>
                 <div class="menu-and-user" style="padding-bottom: 0;">
                     <div class="logged-user-w">
-                        <a href="../profile"> <div class="avatar-w">
+                        <a href=".."/profile> <div class="avatar-w">
                             <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
                     </div>
                     </a>
                     <div class="logged-user-info-w">
                         <div class="logged-user-name mb-1">
-                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                            Signs Madueke
                         </div>
                         <div class="logged-user-role">User</div>
                     </div>
@@ -66,78 +54,86 @@ if (!$user->isLoggedIn()) {
             START - Mobile Menu List
             -------------------->
                 <ul class="main-menu">
-                    <li <?php if ($title == "Dashboard"){echo "class=\"active\"";} ?>>
-                        <a href="" class="pl-1">
-                            <div class="icon-w">
-                                <div class="os-icon os-icon-grid-squares-22"></div>
-                            </div>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
-                        <a href="profile/">
-                            <div class="icon-w">
-                                <div class="icon-user"></div>
-                            </div><span>Profile</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "Payments"){echo "class=\"active\"";} ?>>
-                        <a href="payments/" class="pl-1">
-                            <div class="icon-w">
-                                <div class="os-icon os-icon-wallet-loaded"></div>
-                            </div>
-                            <span>Payments</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "Vendors"){echo "class=\"active\"";} ?>>
-                        <a href="vendors/" class="pl-1">
-                            <div class="icon-w">
-                                <div class="os-icon os-icon-users"></div>
-                            </div>
-                            <span>Vendors</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "States"){echo "class=\"active\"";} ?>>
-                        <a href="states/" class="pl-1">
-                            <div class="icon-w">
-                                <div class="fa fa-building-o"></div>
-                            </div>
-                            <span>States</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "State Fees"){echo "class=\"active\"";} ?>>
-                        <a href="fees/" class="pl-1">
-                            <div class="icon-w">
-                                <div class="os-icon os-icon-coins-4"></div>
-                            </div>
-                            <span>State Fees</span>
-                        </a>
-                    </li>
-                    <li <?php if ($title == "Bank Accounts"){echo "class=\"active\"";} ?>>
-                        <a href="bank/-accounts" class="pl-1">
-                            <div class="icon-w">
-                                <div class="fa fa-university"></div>
-                            </div>
-                            <span>Bank Accounts</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="profile/">
-                            <div class="icon-w">
-                                <div class="os-icon os-icon-fingerprint"></div>
-                            </div>
-                            <span>Change Password</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="logout.php">
-                            <div class="icon-w">
-                                <div class="icon-logout"></div>
-                            </div>
-                            <span>Logout</span>
-                        </a>
-                    </li>
-                </ul>
+                        <li <?php if ($title == "Dashboard"){echo "class=\"active\"";} ?>>
+                            <a href="" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="os-icon os-icon-grid-squares-22"></div>
+                                </div>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
+                            <a href="profile/">
+                                <div class="icon-w">
+                                    <div class="icon-user"></div>
+                                </div><span>Profile</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Payments"){echo "class=\"active\"";} ?>>
+                            <a href="payments/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="os-icon os-icon-wallet-loaded"></div>
+                                </div>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Vendors"){echo "class=\"active\"";} ?>>
+                            <a href="vendors/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="os-icon os-icon-users"></div>
+                                </div>
+                                <span>Vendors</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "States"){echo "class=\"active\"";} ?>>
+                            <a href="states/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="fa fa-building-o"></div>
+                                </div>
+                                <span>States</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Fees"){echo "class=\"active\"";} ?>>
+                            <a href="fees/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="os-icon os-icon-coins-4"></div>
+                                </div>
+                                <span>State Fees</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Ministries"){echo "class=\"active\"";} ?>>
+                            <a href="ministries/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="fa fa-university"></div>
+                                </div>
+                                <span>Ministries</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
+                            <a href="users/" class="pl-lg-1">
+                                <div class="icon-w">
+                                    <div class="icon-people"></div>
+                                </div>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li>                        
+                            <a href="profile/">
+                                <div class="icon-w">
+                                    <div class="os-icon os-icon-fingerprint"></div>
+                                </div>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="logout.php">
+                                <div class="icon-w">
+                                    <div class="icon-logout"></div>
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
                 <!--------------------
             END - Mobile Menu List
             -------------------->
@@ -160,11 +156,11 @@ if (!$user->isLoggedIn()) {
             <div <?php if ($title == "Dashboard"){echo "class=\"border-0 logged-user-w avatar-inline\"";} else{echo "class=\"logged-user-w avatar-inline\"";} ?>>
                 <div class="logged-user-i">
                     <div class="avatar-w">
-                        <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
+                        <img alt="" src="../assets/img/avatar1.jpg" style="background: white;">
                     </div>
                     <div class="logged-user-info-w">
                         <div class="logged-user-name mb-1">
-                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                            Signs Madueke
                         </div>
                         <div class="logged-user-role">User</div>
                     </div>
@@ -175,11 +171,11 @@ if (!$user->isLoggedIn()) {
                         <a href="profile/">
                             <div class="logged-user-avatar-info">
                                 <div class="avatar-w">
-                                    <img alt="" src="../assets/img/avatar5.svg" style="background: white;">
+                                    <img alt="" src="../assets/img/avatar1.jpg" style="background: white;">
                                 </div>
                                 <div class="logged-user-info-w">
                                     <div class="logged-user-name mb-1">
-                                        <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                                        Signs Madueke
                                     </div>
                                     <div class="logged-user-role">
                                         User
@@ -211,7 +207,7 @@ if (!$user->isLoggedIn()) {
                     </a>
                 </li>
                 <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
-                    <a href="profile" class="">
+                    <a href="profile/" class="">
                         <div class="icon-w">
                             <div class="icon-user"></div>
                         </div>
@@ -219,7 +215,7 @@ if (!$user->isLoggedIn()) {
                     </a>
                 </li>
                 <li <?php if ($title == "Payments"){echo "class=\"active\"";} ?>>
-                    <a href="payments" class="">
+                    <a href="payments/" class="">
                         <div class="icon-w">
                             <div class="os-icon os-icon-wallet-loaded"></div>
                         </div>
@@ -227,7 +223,7 @@ if (!$user->isLoggedIn()) {
                     </a>
                 </li>
                 <li <?php if ($title == "Vendors"){echo "class=\"active\"";} ?>>
-                    <a href="vendors" class="">
+                    <a href="vendors/" class="">
                         <div class="icon-w">
                             <div class="os-icon os-icon-users"></div>
                         </div>
@@ -235,7 +231,7 @@ if (!$user->isLoggedIn()) {
                     </a>
                 </li>
                 <li <?php if ($title == "States"){echo "class=\"active\"";} ?>>
-                    <a href="states" class="">
+                    <a href="states/" class="">
                         <div class="icon-w">
                             <div class="fa fa-building-o"></div>
                         </div>
@@ -243,19 +239,27 @@ if (!$user->isLoggedIn()) {
                     </a>
                 </li>
                 <li <?php if ($title == "State Fees"){echo "class=\"active\"";} ?>>
-                    <a href="fees" class="">
+                    <a href="fees/" class="">
                         <div class="icon-w">
                             <div class="os-icon os-icon-coins-4"></div>
                         </div>
-                        <span>State Fees</span>
+                        <span>Fees</span>
                     </a>
                 </li>
-                <li <?php if ($title == "Bank Accounts"){echo "class=\"active\"";} ?>>
-                    <a href="bank/-accounts" class="">
+                <li <?php if ($title == "Ministries"){echo "class=\"active\"";} ?>>
+                    <a href="ministries/" class="">
                         <div class="icon-w">
                             <div class="fa fa-university"></div>
                         </div>
-                        <span>Bank Accounts</span>
+                        <span>Ministries</span>
+                    </a>
+                </li>
+                <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
+                    <a href="users/" class="pl-lg-1">
+                        <div class="icon-w">
+                            <div class="icon-people"></div>
+                        </div>
+                        <span>Users</span>
                     </a>
                 </li>
             </ul>
@@ -264,7 +268,7 @@ if (!$user->isLoggedIn()) {
                     <img width="70px" src="../assets/img/firs.png" alt="FIRS">
                 </div>
                 <div class="col-12 text-center p-0">
-                    <p class="label m-0">Copyright © <?php echo date('Y'); ?> SQIM</p>
+                    <p class="label m-0">Copyright © 2016 SQIM</p>
                 </div>
             </div>
         </div>
@@ -285,25 +289,25 @@ if (!$user->isLoggedIn()) {
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">Payments This Month</div>
-                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('total_amount')); ?> </strong></div>
+                                            <div class="value"><strong>₦574</strong></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">VAT This Month</div>
-                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('vat')); ?></strong></div>
+                                            <div class="value"><strong>₦12</strong></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">WHT This Month</div>
-                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('wht')); ?></strong></div>
+                                            <div class="value"><strong>₦2</strong>,507</div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-3">
                                         <div class="element-box el-tablo">
                                             <div class="label">Stamp Duty This Month</div>
-                                            <div class="value"><strong>₦<?php echo number_format($payment->payment_count('stamp_duty')); ?></strong></div>
+                                            <div class="value"><strong>₦2,507</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +330,7 @@ if (!$user->isLoggedIn()) {
                                                 Total Payments
                                             </div>
                                             <div class="value">
-                                                <?php echo $payment->t_payment(); ?>
+                                                4
                                             </div>
                                         </div>
 
@@ -335,7 +339,7 @@ if (!$user->isLoggedIn()) {
                                                 Completed Payments
                                             </div>
                                             <div class="value">
-                                                <?php echo $payment->completed_payment(); ?>
+                                                3
                                             </div>
                                         </div>
 
@@ -344,7 +348,7 @@ if (!$user->isLoggedIn()) {
                                                 Pending Payments
                                             </div>
                                             <div class="value">
-                                                <?php echo $payment->pending_payment(); ?>
+                                                0
                                             </div>
                                         </div>
                                     </div>
@@ -373,30 +377,6 @@ if (!$user->isLoggedIn()) {
                                                         </tr>
                                                     </tfoot>
                                                     <tbody>
-                                                        <?php foreach ($payment->readAll() as $pay) {?>
-                                                            <tr>
-                                                                <td><?php echo $pay->payment_id; ?></td>
-                                                                <td><?php echo $pay->vendor; ?></td>
-                                                                <td><?php echo $pay->payment_purpose; ?></td>
-                                                                <td class="text-center">
-                                                                    <span class="badge badge-primary-inverted" href=""><?php if ($pay->status == 1) {echo "Final Approval";} else {echo "Approved";} ?></span>
-                                                                </td>
-                                                                <td>₦<?php echo number_format($pay->VAT); ?></td>
-                                                                <td>₦ <?php echo number_format($pay->amount); ?></td>
-                                                            </tr>
-                                                        <?php 
-                                                        } 
-                                                        ?>
-                                                        <!-- <tr>
-                                                            <td>2214</td>
-                                                            <td>UBIQUITE SOLUTIONS LTD</td>
-                                                            <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="text-center">
-                                                                <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                            </td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
                                                         <tr>
                                                             <td>2214</td>
                                                             <td>UBIQUITE SOLUTIONS LTD</td>
@@ -436,7 +416,27 @@ if (!$user->isLoggedIn()) {
                                                             </td>
                                                             <td>₦40,000</td>
                                                             <td>₦200,000.00</td>
-                                                        </tr> -->
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td>UBIQUITE SOLUTIONS LTD</td>
+                                                            <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="text-center">
+                                                                <span class="badge badge-primary-inverted" href="">Final Approval</span>
+                                                            </td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td>UBIQUITE SOLUTIONS LTD</td>
+                                                            <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="text-center">
+                                                                <span class="badge badge-primary-inverted" href="">Final Approval</span>
+                                                            </td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>

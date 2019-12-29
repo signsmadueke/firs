@@ -89,6 +89,10 @@ TABLE OF CONTENTS
     --background: linear-gradient(to bottom right, #007252, #4caf50);
 }
 
+.bg-background {
+    background: var(--background) !important;
+}
+
 /* Hide the browser's default checkbox */
 .checkcontainer input {
   position: absolute;

@@ -1,18 +1,11 @@
 <?php
-require_once 'core/init.php';
-
-$user = new User();
-$payment = new Payment();
-if (!$user->isLoggedIn()) {
-    Redirect::to('../login.php');
-}
     $title = 'Payments';
     require_once '../includes/header.php';
     // require_once '../includes/bgcolor.php';
     // require_once '../includes/chat.php';
 ?>
 <div class="content-box">
-    <div class="row col-sm-5">
+    <div class="row">
         <div class="col-md-12 col-sm-12 col-lg-11">
             <div class="element-wrapper">
                 <h6 class="element-header">
@@ -36,264 +29,122 @@ if (!$user->isLoggedIn()) {
                     </div>
                 </div>
                 <div class="element-box">
-                    <form>
-                        <div class="steps-w">
-                            <div class="step-trikkers">
-                                <a class="step-trikker active" href="">Payments</a>
-                                <a class="step-trikker" href="pending.php">Pending</a>
-                                <a class="step-trikker" href="approved.php">Approved</a>
-                            </div>
-                            <div class="step-contents">
-                                <div class="step-content active p-0">
-                                    <form action="">
-                                        <div class="table-responsive">
-                                            <table id="datatable" class="table table-padded nowrap w-100" style="border-collapse: separate !important;">
-                                                <thead>
-                                                    <tr class="">
-                                                        <th class="invisible"></th>
-                                                        <th class="p-0 w-100">
-                                                            
-                                                        </th>
-                                                        <th>Vendor</th>
-                                                        <th>Payment Purpose</th>
-                                                        <th>From</th>
-                                                        <th>Date</th>
-                                                        <th>Status</th>
-                                                        <th>Amount</th>
-                                                        <th>Net-Amount</th>
-                                                        <th>WHT</th>
-                                                        <th>Ref</th>
-                                                        <th>VAT</th>
-                                                        <th>Levies</th>
-                                                    </tr>
-                                                </thead>
-                                                <tfoot>
-                                                    <tr class="">
-                                                        <th class="invisible"></th>
-                                                        <th class="invisible"></th>
-                                                        <th>Vendor</th>
-                                                        <th>Payment Purpose</th>
-                                                        <th>From</th>
-                                                        <th>Date</th>
-                                                        <th>Status</th>
-                                                        <th>Amount</th>
-                                                        <th>WHT</th>
-                                                        <th>Net-Amount</th>
-                                                        <th>Ref</th>
-                                                        <th>VAT</th>
-                                                        <th>Levies</th>
-                                                    </tr>
-                                                </tfoot>
-                                                <tbody>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td>₦180,000.00</td>
-                                                        <td></td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td></td>
-                                                        <td class="p-0 w-100">
-                                                            <input type="checkbox" name="acs">
-                                                        </td>
-                                                        <td>UBIQUITE SOLUTIONS LTD</td>
-                                                        <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                        <td>0047017429 - Access Bank PLC</td>
-                                                        <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                        <td class="text-center">
-                                                            <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                        </td>
-                                                        <td>₦40,000,000.00</td>
-                                                        <td>₦200,000.00</td>
-                                                        <td></td>
-                                                        <td>₦180,000.00</td>
-                                                        <td>₦0.00</td>
-                                                        <td>₦0.00</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="row pt-4">
-                                                <div class="col-sm-12 col-md-4 col-lg-2 mb-2">
-                                                    <a href="#" onclick="selectAll()" id="checker" class="btn-block mt-3 p-3 btn btn-outline-primary">Select All</a>
-                                                </div>
-                                                <div class="col-sm-12 col-md-8 col-lg-10 mb-2">
-                                                    <button class="p-3 mt-3 btn btn-primary btn-block" type="submit">Approve Selected</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                    <div class="row border-bottom py-5">
+                        <div class="col-12 text-center">
+                            <img src="../../assets/img/firs.png" alt="" width="150px">
+                        </div>
+                    </div>
+                    <div class="row border-bottom py-5">
+                        <div class="col-6 text-right">
+                            <p>Payment From</p>
+                            <h4>Enugu State Government</h4>
+                            <p class="m-0" style="word-break: break-all;">
+                                Enugu
+                                <br>
+                                Nigeria
+                            </p>
+                        </div>
+                        <div class="col-6 text-left">
+                            <p>Payment To</p>
+                            <h4>Signs Madueke</h4>
+                            <p class="m-0" style="word-break: break-all;">
+                                Enugu
+                                <br>
+                                Nigeria
+                                <br>
+                                08084048140
+                                <br>
+                                signsmadueke1@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="element-box el-tablo bg-background">
+                                <div class="label text-light">
+                                    Invoice
                                 </div>
+                                <h6 class="text-light pt-2 m-0">
+                                    FIRS/EBS0020/IR
+                                </h6>
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="element-box el-tablo bg-background">
+                                <div class="label text-light">
+                                    Date
+                                </div>
+                                <h6 class="text-light pt-2 m-0">
+                                    07/19/2019
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="element-box el-tablo bg-background">
+                                <div class="label text-light">
+                                    Net Amount
+                                </div>
+                                <h6 class="text-light pt-2 m-0">
+                                    ₦890.00
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="w-100" style="overflow: hidden;">
+                                <table id="" width="100%" class="table nowrap table-striped table-lightfont">
+                                    <thead>
+                                        <tr class="">
+                                            <th>Payment Purpose</th>
+                                            <th>Payment Description</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td class="px-4 py-4">Witholding Tax (5%)</td>
+                                            <td class="py-4">Money for Tax</td>
+                                            <td class="py-4 text-danger"><strong>- 50.00</strong></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="px-4 py-4">Witholding Tax (5%)</td>
+                                            <td class="py-4">Money for Tax</td>
+                                            <td class="py-4 text-success"><strong>+ 50.00</strong></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="px-4 py-4">Witholding Tax (5%)</td>
+                                            <td class="py-4">Money for Tax</td>
+                                            <td class="py-4 text-success"><strong>+ 50.00</strong></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="px-4 py-4">Witholding Tax (5%)</td>
+                                            <td class="py-4">Money for Tax</td>
+                                            <td class="py-4 text-danger"><strong>- 50.00</strong></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="px-4 py-4">Witholding Tax (5%)</td>
+                                            <td class="py-4">Money for Tax</td>
+                                            <td class="py-4 text-success"><strong>+ 50.00</strong></td>
+                                        </tr>
+                                        <tr class="bg-dark text-light">
+                                            <td class="px-4 py-4">Total</td>
+                                            <td class="py-4"></td>
+                                            <td class="py-4"><strong>+ 6500.00</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-1"></div> 
     </div>
 
 

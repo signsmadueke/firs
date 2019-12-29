@@ -1,11 +1,4 @@
 <?php
-require_once 'core/init.php';
-
-$user = new User();
-$payment = new Payment();
-if (!$user->isLoggedIn()) {
-    Redirect::to('../login.php');
-}
     $title = 'State Fees';
     require_once '../includes/header.php';
     require_once '../includes/bgcolor.php';

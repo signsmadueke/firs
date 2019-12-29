@@ -38,14 +38,14 @@
                 </div>
                 <div class="menu-and-user" style="padding-bottom: 0;">
                     <div class="logged-user-w">
-                        <a href="../profile">
+                        <a href=".."/profile>
                             <div class="avatar-w">
-                                <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
+                                <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
                             </div>
                         </a>
                         <div class="logged-user-info-w">
                             <div class="logged-user-name mb-1">
-                                <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                                Signs Madueke
                             </div>
                             <div class="logged-user-role">User</div>
                         </div>
@@ -109,6 +109,13 @@
                                 <span>Ministries</span>
                             </a>
                         </li>
+                        <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
+                            <a href="../users">
+                                <div class="icon-w">
+                                    <div class="icon-people"></div>
+                                </div><span>Users</span>
+                            </a>
+                        </li>
                         <li>                        
                             <a href="../profile">
                                 <div class="icon-w">
@@ -148,11 +155,11 @@
                 <div <?php if ($title == "Dashboard"){echo "class=\"border-0 logged-user-w avatar-inline\"";} else{echo "class=\"logged-user-w avatar-inline\"";} ?>>
                     <div class="logged-user-i">
                         <div class="avatar-w">
-                            <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
+                            <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
                         </div>
                         <div class="logged-user-info-w">
                             <div class="logged-user-name mb-1">
-                                <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                                Signs Madueke
                             </div>
                             <div class="logged-user-role">User</div>
                         </div>
@@ -163,11 +170,11 @@
                             <a href="../profile">
                                 <div class="logged-user-avatar-info">
                                     <div class="avatar-w">
-                                        <img alt="" src="../../assets/img/avatar5.svg" style="background: white;">
+                                        <img alt="" src="../../assets/img/avatar1.jpg" style="background: white;">
                                     </div>
                                     <div class="logged-user-info-w">
                                         <div class="logged-user-name mb-1">
-                                            <?php echo $user->data()->firstname . ' ' . $user->data()->lastname; ?>
+                                            Signs Madueke
                                         </div>
                                         <div class="logged-user-role">
                                             User
@@ -246,13 +253,21 @@
                             <span>Ministries</span>
                         </a>
                     </li>
+                    <li <?php if ($title == "Users"){echo "class=\"active\"";} ?>>
+                        <a href="../users" class="">
+                            <div class="icon-w">
+                                <div class="icon-people"></div>
+                            </div>
+                            <span>Users</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="row m-0 pt-5 mt-5 mb-3">
                     <div class="col-12 text-center mb-4 p-0">
                         <img width="70px" src="../../assets/img/firs.png" alt="FIRS">
                     </div>
                     <div class="col-12 text-center p-0">
-                        <p class="label m-0">Copyright © <?php echo date('Y'); ?> SQIM</p>
+                        <p class="label m-0">Copyright © 2016 SQIM</p>
                     </div>
                 </div>
             </div>

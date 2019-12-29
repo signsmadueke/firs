@@ -1,45 +1,8 @@
-<?php 
-require_once 'core/init.php'; 
-if (Input::exists() OR Input::exists('get')) {
-    if (is_null(Input::get('u')) OR empty(Input::get('u')) OR Input::get('u') == '') {
-        Session::flash('login', 'Unauthorize access');
-        Redirect::to('login.php');
-    }
-    $user = new User();
-    if (!$user->find(Input::get('u'))) {
-        Session::flash('login', 'Unauthorize access');
-        Redirect::to('login.php');
-    }
-    if (Token::check(Input::get('token')) && Input::get('u')) {
-        
-        $validate = new Validate();
-        $validation = $validate->check($_POST, array(
-            'otp' => array('required' => true),
-        ));
-
-        if ($validation->passed()) {
-
-            $login = $user->otp(Input::get('otp'), Input::get('u'));
-
-            if ($login) {
-                Redirect::to('dashboard');
-            }else {
-                Session::flash('login', 'Sorry OTP not correct');
-                Redirect::to('login.php');
-            }
-        } else {
-            $errors = $validation->errors();
-        }
-    }
-} else {
-    Redirect::to('login.php');
-}
-?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Login — firs</title>
+    <title>Login — Perpetuity.ng</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="template language" name="keywords">
@@ -63,22 +26,9 @@ if (Input::exists() OR Input::exists('get')) {
             <h4 class="auth-header">
                 Login OTP
             </h4>
-            <form method="post" data-toggle="validator" role="form" action="" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
-                <div class="row">
-                    <div class="col-sm-12 pt-4 text-center">
-                        <?php if (isset($errors)) { 
-                            foreach ($errors as $error) {?>
-                                <div class="alert alert-danger">
-                                        <?php echo $error; ?>
-                                </div>
-                                <?php 
-                            }
-                       } 
-                       ?>
-                    </div>
-                </div>
+            <form method="post" data-toggle="validator" role="form" action="dashboard/" style="padding: 20px calc(50px + 3%) 60px calc(50px + 3%)">
                 <div class="form-group">
-                    <input name="otp" class="form-control" id="password" placeholder="Input your OTP" type="password">
+                    <input name="password" class="form-control" id="password" placeholder="Input your OTP" type="password">
                     <div class="pre-icon os-icon os-icon-fingerprint"></div>
                 </div>
                 <div class="buttons-w text-center pt-4">
@@ -91,7 +41,15 @@ if (Input::exists() OR Input::exists('get')) {
                         </div>
                     </div>
                 </div>
-                <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                <div class="row">
+                    <div class="col-sm-12 pt-4 text-center">
+                        <?php if (isset($error)) { ?>
+                            <div class="alert alert-danger">
+                                    <?php echo $error; ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
