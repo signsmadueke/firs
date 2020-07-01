@@ -192,8 +192,8 @@ body.full-screen .top-bar {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar:hover {
@@ -202,14 +202,14 @@ body.full-screen .top-bar {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   background: rgba(0, 114, 82, 0.2);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--background);
-  border-radius: 50px;
+  /*border-radius: 50px;*/
 }
 
 *::selection {
@@ -17600,9 +17600,9 @@ body.menu-side-right .layout-w {
 
 .el-tablo .label {
     display: block;
-    font-size: 0.63rem;
+    font-size: 0.70rem;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
 }
 
@@ -17611,7 +17611,7 @@ body.menu-side-right .layout-w {
     font-weight: normal;
     font-family: "Circular Std Bold", sans-serif;
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
 }
@@ -17744,31 +17744,49 @@ body.menu-side-right .layout-w {
     transition: all 0.25s ease;
 }
 
-.el-tablo:hover {
-    -webkit-transform: translateY(-5px) scale(1.02);
-    transform: translateY(-5px) scale(1.02);
-    -webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
-    box-shadow: 0px 5px 12px rgba(0, 114, 82, 0.1);
+a.el-tablo {
+  text-decoration: none;
+  display: block;
+  color: #3E4B5B;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.el-tablo:hover .value {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    color: #4caf50;
+a.el-tablo .value {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.el-tablo:hover .label {
-    color: #4caf50;
+a.el-tablo .label {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.el-tablo:hover.centered .value {
-    -webkit-transform: scale(1.1) translateY(-3px);
-    transform: scale(1.1) translateY(-3px);
+a.el-tablo:hover {
+  -webkit-transform: translateY(-5px) scale(1.02);
+          transform: translateY(-5px) scale(1.02);
+  -webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
+          box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
 }
 
-.el-tablo:hover .label {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+a.el-tablo:hover .value {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  color: #4caf50;
+}
+
+a.el-tablo:hover .label {
+  color: #4caf50;
+}
+
+a.el-tablo:hover.centered .value {
+  -webkit-transform: scale(1.1) translateY(-3px);
+          transform: scale(1.1) translateY(-3px);
+}
+
+a.el-tablo:hover .label {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .el-buttons-list .btn,
