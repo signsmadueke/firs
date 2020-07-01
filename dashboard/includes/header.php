@@ -26,9 +26,16 @@
         -------------------->
             <div class="menu-mobile menu-activated-on-click color-scheme-bright">
                 <div class="mm-logo-buttons-w">
-                    <a class="mm-logo" href="../">
-                        <img src="../../assets/img/logo-x2.png" alt="logo" style="height: 35px;">
-                        <span>National Accountant General Tax Solution</span>
+                    <a class="row align-items-center mm-logo" href="../">
+                        <div class="col-auto">
+                            <img src="../../assets/img/favicon.png" alt="logo">
+                        </div>
+                        <div class="col-auto pl-0">
+                            <span class="ml-0">
+                                <h6 class="d-inline-block mb-0">National Accountant General<br>Tax Solution</h6>
+                                <p class="label mb-0 para">Enugu State</p>
+                            </span>
+                        </div>
                     </a>
                     <div class="mm-buttons">
                         <div class="mobile-menu-trigger">

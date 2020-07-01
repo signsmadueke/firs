@@ -22,8 +22,8 @@
                                     <strong>User</strong>
                                 </div>
                                 <div class="mt-2 d-md-none">
-                                    <button class="col-sm-2 p-2 btn btn-primary btn-sm mb-2" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
-                                    <button class="col-sm-2 p-2 btn btn-outline-primary btn-sm mb-2" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
+                                    <button class="col-sm-3 p-2 btn btn-primary btn-sm mb-2" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
+                                    <button class="col-sm-3 p-2 btn btn-outline-primary btn-sm mb-2 ml-0" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
                                 </div>
                                 <div class="mt-2 d-none d-md-block">
                                     <button class="btn btn-primary" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>

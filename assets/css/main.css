@@ -14626,7 +14626,7 @@ body.menu-side-right .layout-w {
 
 .menu-w .logo-w {
     text-align: center;
-    padding: 14px 1rem 14px 1.7rem;
+    padding: 14px;
 }
 
 .menu-w .logo-w a {
@@ -14653,21 +14653,17 @@ body.menu-side-right .layout-w {
 
 .menu-w ul.main-menu {
     list-style: none;
-    padding: 2rem 1rem;
+    padding: 0;
     margin-bottom: 0px;
 }
 
 .menu-w ul.main-menu > li {
     display: block;
-    border-bottom: 1px solid rgba(76, 175, 80, 0.1);
 }
 
 .menu-w ul.main-menu > li:last-child {
     border-bottom: none;
-}
-
-.menu-w ul.main-menu > li:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .menu-w ul.main-menu > li.has-sub-menu > a:before {
@@ -15206,7 +15202,7 @@ body.menu-side-right .layout-w {
     transform: none;
 }
 
-.menu-mobile ul.main-menu > li.active {
+.menu-mobile ul.main-menu > li.active a {
     border-right-color: #007252;
     border-bottom-color: #007252;
     border-radius: 4px;
@@ -15214,9 +15210,10 @@ body.menu-side-right .layout-w {
 }
 
 .menu-mobile ul.main-menu > li.active > a {
-    background-color: #007252;
+    background-image: var(--background);
     color: #fff;
-    border-radius: 4px;
+    border-radius: 5px;
+    border: 0;
 }
 
 .menu-mobile ul.main-menu > li.active > a:before {
@@ -15238,14 +15235,12 @@ body.menu-side-right .layout-w {
 
 .menu-w.sub-menu-style-over ul.main-menu > li.active {
     border: none;
-    border-radius: 5px;
-    background-image: var(--background);
-    box-shadow: 0px 5px 12px rgba(0, 114, 82, 0.1);
 }
 
 .menu-w.sub-menu-style-over ul.main-menu > li.active > a {
     background-image: var(--background);
     color: #fff;
+    box-shadow: 0px 5px 12px rgba(0, 114, 82, 0.1);
 }
 
 .menu-w.sub-menu-style-over ul.main-menu > li.active > a:before {
@@ -15268,7 +15263,10 @@ body.menu-side-right .layout-w {
 .menu-w.sub-menu-style-over ul.main-menu li {
     -webkit-transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
     transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
-    border-radius: 4px;
+    margin-bottom: 10px;
+    background: transparent;
+    margin: 10px;
+    border: 0;
 }
 
 .menu-w.sub-menu-style-over ul.main-menu li a {
@@ -15279,6 +15277,7 @@ body.menu-side-right .layout-w {
     -webkit-transition: background-image 0s cubic-bezier(0.65, 0.05, 0.36, 1);
     transition: background-image 0s cubic-bezier(0.65, 0.05, 0.36, 1);
     border-radius: 5px;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.1);
 }
 
 .menu-w.sub-menu-style-over ul.main-menu li a .icon-w {
@@ -15286,17 +15285,15 @@ body.menu-side-right .layout-w {
     transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.menu-w.sub-menu-style-over ul.main-menu li:hover {
+.menu-w.sub-menu-style-over ul.main-menu li a:hover {
     border: none;
     box-shadow: 0px 5px 12px rgba(76, 175, 80, 0.1);
-    background: none;
-}
-
-.menu-w.sub-menu-style-over ul.main-menu li:hover a {
     background-color: rgba(76, 175, 80, 0.2);
     color: #007252;
     background-image: none;
 }
+
+.menu-w.sub-menu-style-over ul.main-menu li a:hover {border-color: transparent;}
 
 .menu-w.color-scheme-dark  ul.main-menu li:hover a {
     background-color: rgba(76, 175, 80, 0.2);
@@ -15309,7 +15306,7 @@ body.menu-side-right .layout-w {
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.menu-w.sub-menu-style-over ul.main-menu li:hover a .icon-w {
+.menu-w.sub-menu-style-over ul.main-menu li a:hover .icon-w {
     color: #007252;
     -webkit-transform: translateX(0px) scale(1.15);
     transform: translateX(0px) scale(1.15);
@@ -16971,6 +16968,9 @@ body.menu-side-right .layout-w {
 
 .menu-mobile .mm-logo-buttons-w .mm-logo img {
     display: inline-block;
+    height: 50px;
+    border: 1px solid rgba(76, 175, 80, 1);
+    border-radius: 75px;
 }
 
 .menu-mobile .mm-logo-buttons-w .mm-logo span {
@@ -17072,13 +17072,15 @@ body.menu-side-right .layout-w {
 
 .menu-mobile ul.main-menu {
     list-style: none;
-    padding: 10px 1rem;
+    padding: 0;
     margin-bottom: 0px;
 }
 
 .menu-mobile ul.main-menu > li {
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: transparent;
+    margin: 10px;
+    border: 0;
 }
 
 .menu-mobile ul.main-menu > li:last-child {
@@ -17120,6 +17122,7 @@ body.menu-side-right .layout-w {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.1);
 }
 
 .menu-mobile ul.main-menu > li > a:focus {
@@ -17585,6 +17588,12 @@ body.menu-side-right .layout-w {
 .invoice-w .input-search-w,
 .big-error-w .input-search-w {
     margin-bottom: 1rem;
+}
+
+.para.label {
+    font-size: 0.58rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /*
