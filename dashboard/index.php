@@ -40,7 +40,7 @@ $title = 'Dashboard';
                             </span>
                         </div>
                     </a>
-                    <div class="mm-buttons">
+                    <div class="mm-buttons p-3">
                         <div class="mobile-menu-trigger">
                             <div class="os-icon os-icon-hamburger-menu-1"></div>
                         </div>
