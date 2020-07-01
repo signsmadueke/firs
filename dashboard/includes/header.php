@@ -5,9 +5,9 @@
     <title><?php echo $title; ?> — FIRS</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="template language" name="keywords">
-    <meta content="Perpetuity.ng" name="author">
-    <meta content="Login to your account Perpetuity.ng." name="description">
+    <meta content="firs" name="keywords">
+    <meta content="FIRS" name="author">
+    <meta content="National Accountant General Tax Solution" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="../../assets/img/favicon.png" rel="shortcut icon">
     <link href="../../assets/img/favicon.png" rel="apple-touch-icon">
