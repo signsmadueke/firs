@@ -777,7 +777,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Payments to be Swept Today
+                                                                Payments yet to be Swept Today
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -809,7 +809,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                VAT to be Swept Today
+                                                                VAT yet to be Swept Today
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -841,7 +841,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                WHT to be Swept Today
+                                                                WHT yet to be Swept Today
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -873,7 +873,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Stamp Duty to be Swept Today
+                                                                Stamp Duty yet to be Swept Today
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -905,7 +905,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                State IGR to be Swept Today
+                                                                State IGR yet to be Swept Today
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -958,7 +958,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Payments to be Swept This Week
+                                                                Payments yet to be Swept This Week
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -990,7 +990,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                VAT to be Swept This Week
+                                                                VAT yet to be Swept This Week
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1022,7 +1022,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                WHT to be Swept This Week
+                                                                WHT yet to be Swept This Week
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1054,7 +1054,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Stamp Duty to be Swept This Week
+                                                                Stamp Duty yet to be Swept This Week
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1086,7 +1086,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                State IGR to be Swept This Week
+                                                                State IGR yet to be Swept This Week
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1139,7 +1139,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Payments to be Swept This Month
+                                                                Payments yet to be Swept This Month
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1171,7 +1171,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                VAT to be Swept This Month
+                                                                VAT yet to be Swept This Month
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1203,7 +1203,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                WHT to be Swept This Month
+                                                                WHT yet to be Swept This Month
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1235,7 +1235,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Stamp Duty to be Swept This Month
+                                                                Stamp Duty yet to be Swept This Month
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1267,7 +1267,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                State IGR to be Swept This Month
+                                                                State IGR yet to be Swept This Month
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1320,7 +1320,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Payments to be Swept This Year
+                                                                Payments yet to be Swept This Year
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1352,7 +1352,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                VAT to be Swept This Year
+                                                                VAT yet to be Swept This Year
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1384,7 +1384,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                WHT to be Swept This Year
+                                                                WHT yet to be Swept This Year
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1416,7 +1416,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                Stamp Duty to be Swept This Year
+                                                                Stamp Duty yet to be Swept This Year
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
@@ -1448,7 +1448,7 @@ $title = 'Dashboard';
                                                     <div class="col-sm-12 col-md-6 col-lg-4 p-2">
                                                         <div class="centered el-tablo padded border smaller rounded">
                                                             <div class="label">
-                                                                State IGR to be Swept This Year
+                                                                State IGR yet to be Swept This Year
                                                             </div>
                                                             <div class="value">
                                                                 <strong>₦</strong>15,000
