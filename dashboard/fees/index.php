@@ -6,36 +6,37 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-lg-11">
+        <div class="col-sm-12">
             <div class="element-wrapper">
-                <h6 class="element-header">
-                    <?php echo $title; ?>
-                </h6>
-                <div class="element-box mb-5 row p-4">
-                    <div class="align-self-center col-lg-9 col-md-12 col-sm-12">
+                <div class="element-box row p-4 m-0">
+                    <div class="col-sm">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
-                                <div class="os-icon os-icon-users"></div>
+                                <div class="os-icon os-icon-coins-4"></div>
                             </div>
                             <div class="element-info-text">
                                 <h5 class="element-inner-header">
-                                    State Bank Management
+                                    State Fees
                                 </h5>
                                 <div class="element-inner-desc">
-                                    View, Create, Edit and delete location bank details
+                                    View, create, edit state fees
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="align-self-center centered col-lg-3 col-md-12 col-sm-12 m-0 mt-lg-0 mt-md-4 mt-sm-4 p-0">
-                        <a class="btn btn-block btn-primary text-white el-tablo m-0 p-lg-4 p-md-2 p-md-3 p-sm-2 p-sm-3" href="#" data-target="#add" data-toggle="modal">
-                            <i class="icon-feather-plus mr-2"></i>
-                            Add State Fees
+                    <div class="col-sm-auto mt-4 mt-lg-0">
+                        <a class="btn btn-block btn-primary el-tablo m-0 p-3 pl-4 pr-4 text-white" href="#" data-target="#add" data-toggle="modal">
+                            <i class="icon-feather-plus-circle mr-2"></i>
+                            Add State Fee
                         </a>
                     </div>
                 </div>
-                <div class="element-box">
-                    <div class="w-100" style="overflow: hidden;">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="element-box px-0">
+                    <div class="table-responsive">
                         <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>
                                 <tr class="">

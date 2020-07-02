@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box">
+                <div class="element-box px-0">
                     <form>
                         <div class="steps-w">
                             <div class="step-trikkers">

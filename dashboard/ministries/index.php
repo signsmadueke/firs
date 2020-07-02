@@ -34,7 +34,7 @@
 
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box">
+                <div class="element-box px-0">
                     <div class="table-responsive">
                         <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>

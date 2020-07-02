@@ -59,7 +59,7 @@
                                             </thead>
                                             <tfoot>
                                                 <tr class="">
-                                                    <th class="invisible"></th>
+                                                    <th class="invisible" colspan="2"></th>
                                                     <th>Vendor</th>
                                                     <th>Payment Purpose</th>
                                                     <th>From</th>
@@ -287,13 +287,13 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="row pt-3">
-                                        <div class="col-sm-12 col-md-12 col-lg-7 mb-2"></div>
-                                        <div class="col-sm-12 col-md-4 col-lg-2 mb-2">
-                                            <a href="#" onclick="selectAll()" id="checker" class="btn-block mt-3 p-3 btn btn-white"><i class="icon-plus mr-3"></i>Select All</a>
+                                    <div class="mx-0 my-4 pt-0 px-4 row">
+                                        <div class="col-sm"></div>
+                                        <div class="col-md-auto col-sm-12 mb-4">
+                                            <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
                                         </div>
-                                        <div class="col-sm-12 col-md-8 col-lg-3 mb-2">
-                                            <button class="p-3 mt-3 btn btn-primary btn-block" type="submit">Approve Selected<i class="icon-feather-check ml-2"></i></button>
+                                        <div class="col-md-auto col-sm-12">
+                                            <button class="btn p-3 px-5 btn-primary btn-block" type="submit">Approve Selected<i class="icon-feather-check ml-2"></i></button>
                                         </div>
                                     </div>
                                 </div>

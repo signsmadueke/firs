@@ -301,12 +301,12 @@
                                 </tbody>
                             </table>
                             
-                            <div class="mx-0 my-4 pt-0 px-4 row">
+                            <div class="mx-0 mt-4 pt-0 px-4 row">
                                 <div class="col-sm"></div>
                                 <div class="col-md-auto col-sm-12 mb-4">
                                     <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
                                 </div>
-                                <div class="col-md-auto col-sm-12">
+                                <div class="col-md-auto col-sm-12 mb-4">
                                     <a class="btn p-3 px-5 btn-danger btn-block" href="#" data-target="#deletemultiple" data-toggle="modal"><i class="icon-feather-trash mr-2"></i>Delete Selected</a>
                                 </div>
                             </div>
