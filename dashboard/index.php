@@ -404,7 +404,7 @@ $title = 'Dashboard';
                                                             <div class="element-inner-desc">
                                                                 All payments that have been made recently
                                                             </div>
-                                                            <a class="btn btn-link btn-underlined smaller" href="payments/swept"><span>View all payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined smaller" href="payments"><span>View all payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -516,7 +516,7 @@ $title = 'Dashboard';
                                                             <div class="element-inner-desc">
                                                                 All pending payments with ageing period and days count since payment initiated
                                                             </div>
-                                                            <a class="btn btn-link btn-underlined smaller" href="payments/pending"><span>View all pending payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined smaller" href="payments/pending.php"><span>View all pending payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -642,7 +642,7 @@ $title = 'Dashboard';
                                                             <div class="element-inner-desc">
                                                                 All payments that have been swept
                                                             </div>
-                                                            <a class="btn btn-link btn-underlined smaller" href="payments/swept"><span>View all swept payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined smaller" href="payments/swept.php"><span>View all swept payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
