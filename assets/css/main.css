@@ -177,7 +177,7 @@ body.full-screen .top-bar {
 }
 
 .skroll {
-    overflow: auto;
+    overflow: ;
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
@@ -13280,6 +13280,7 @@ table.dataTable th.dataTables_empty {
 table.dataTable.nowrap th,
 table.dataTable.nowrap td {
     white-space: nowrap;
+    white-space: normal;
 }
 
 div.dataTables_wrapper div.dataTables_length label {

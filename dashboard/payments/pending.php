@@ -6,11 +6,8 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-lg-10">
+        <div class="col-sm-12">
             <div class="element-wrapper">
-                <h6 class="element-header">
-                    <?php echo $title; ?>
-                </h6>
                 <div class="element-box mb-5">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
@@ -28,18 +25,22 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
                 <div class="element-box">
                     <form>
                         <div class="steps-w">
                             <div class="step-trikkers">
-                                <a class="step-trikker" href="../payments">Payments</a>
-                                <a class="step-trikker active" href="">Pending</a>
-                                <a class="step-trikker" href="approved.php">Approved</a>
+                                <a class="step-trikker" href="index.php">Payments</a>
+                                <a class="step-trikker" href="swept.php">Swept Payments</a>
+                                <a class="step-trikker active" href="">Pending Payments</a>
                             </div>
                             <div class="step-contents">
                                 <div class="step-content active p-0">
                                     <div class="w-100" style="overflow: hidden;">
-                                        <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
+                                        <table id="datatable" width="100%" class="table nowrap table table-hover table-lightfont">
                                             <thead>
                                                 <tr class="">
                                                     <th class="invisible"></th>
@@ -474,7 +475,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-2"></div>
     </div>
 
 

@@ -69,13 +69,6 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
-                            <a href="../profile">
-                                <div class="icon-w">
-                                    <div class="icon-user"></div>
-                                </div><span>Profile</span>
-                            </a>
-                        </li>
                         <li <?php if ($title == "Payments"){echo "class=\"active\"";} ?>>
                             <a href="../payments" class="pl-lg-1">
                                 <div class="icon-w">
@@ -90,6 +83,14 @@
                                     <div class="os-icon os-icon-users"></div>
                                 </div>
                                 <span>Vendors</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Tax Payers"){echo "class=\"active\"";} ?>>
+                            <a href="tax-payers">
+                                <div class="icon-w">
+                                    <div class="icon-feather-file-text"></div>
+                                </div>
+                                <span>Tax Payers</span>
                             </a>
                         </li>
                         <li <?php if ($title == "States"){echo "class=\"active\"";} ?>>
@@ -120,7 +121,23 @@
                             <a href="../users">
                                 <div class="icon-w">
                                     <div class="icon-people"></div>
-                                </div><span>Users</span>
+                                </div>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
+                            <a href="../profile">
+                                <div class="icon-w">
+                                    <div class="icon-user"></div>
+                                </div><span>Profile</span>
+                            </a>
+                        </li>
+                        <li <?php if ($title == "Help"){echo "class=\"active\"";} ?>>
+                            <a href="help">
+                                <div class="icon-w">
+                                    <div class="icon-feather-help-circle"></div>
+                                </div>
+                                <span>Help</span>
                             </a>
                         </li>
                         <li>                        
@@ -212,14 +229,6 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
-                        <a href="../profile" class="">
-                            <div class="icon-w">
-                                <div class="icon-user"></div>
-                            </div>
-                            <span>Profile</span>
-                        </a>
-                    </li>
                     <li <?php if ($title == "Payments"){echo "class=\"active\"";} ?>>
                         <a href="../payments" class="">
                             <div class="icon-w">
@@ -234,6 +243,13 @@
                                 <div class="os-icon os-icon-users"></div>
                             </div>
                             <span>Vendors</span>
+                        </a>
+                    </li>
+                    <li <?php if ($title == "Tax Payers"){echo "class=\"active\"";} ?>>
+                        <a href="tax-payers">
+                            <div class="icon-w">
+                                <div class="icon-feather-file-text"></div>
+                            </div><span>Tax Payers</span>
                         </a>
                     </li>
                     <li <?php if ($title == "States"){echo "class=\"active\"";} ?>>
@@ -268,13 +284,29 @@
                             <span>Users</span>
                         </a>
                     </li>
+                    <li <?php if ($title == "Profile"){echo "class=\"active\"";} ?>>
+                        <a href="../profile" class="">
+                            <div class="icon-w">
+                                <div class="icon-user"></div>
+                            </div>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li <?php if ($title == "Help"){echo "class=\"active\"";} ?>>
+                        <a href="help" class="">
+                            <div class="icon-w">
+                                <div class="icon-feather-help-circle"></div>
+                            </div>
+                            <span>Help</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="row m-0 pt-5 mt-5 mb-3">
                     <div class="col-12 text-center mb-4 p-0">
                         <img width="70px" src="../../assets/img/firs.png" alt="FIRS">
                     </div>
                     <div class="col-12 text-center p-0">
-                        <p class="label m-0">Copyright © 2016 SQIM</p>
+                        <p class="label m-0">Copyright © 2020 Elnino Technologies</p>
                     </div>
                 </div>
             </div>
