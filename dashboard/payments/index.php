@@ -39,7 +39,7 @@
                             </div>
                             <div class="step-contents">
                                 <div class="step-content active p-0">
-                                    <div class="w-100" style="overflow: hidden;">
+                                    <div class="table-responsive">
                                         <table id="datatable" width="100%" class="table nowrap table table-hover table-lightfont">
                                             <thead>
                                                 <tr class="">
