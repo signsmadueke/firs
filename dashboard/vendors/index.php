@@ -6,13 +6,10 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-lg-11">
+        <div class="col-sm-12">
             <div class="element-wrapper">
-                <h6 class="element-header">
-                    <?php echo $title; ?>
-                </h6>
-                <div class="element-box mb-5 row p-4">
-                    <div class="align-self-center col-lg-9 col-md-12 col-sm-12">
+                <div class="element-box row p-4 m-0">
+                    <div class="col-sm">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
                                 <div class="os-icon os-icon-users"></div>
@@ -27,16 +24,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="align-self-center centered col-lg-3 col-md-12 col-sm-12 m-0 mt-lg-0 mt-md-4 mt-sm-4 p-0">
-                        <a class="btn btn-block btn-primary text-white el-tablo m-0 p-lg-4 p-md-2 p-md-3 p-sm-2 p-sm-3" href="#" data-target="#add" data-toggle="modal">
-                            <i class="icon-feather-plus mr-2"></i>
+                    <div class="col-sm-auto mt-4 mt-lg-0">
+                        <a class="btn btn-block btn-primary el-tablo m-0 p-3 pl-4 pr-4 text-white" href="#" data-target="#add" data-toggle="modal">
+                            <i class="icon-feather-plus-circle mr-2"></i>
                             Add Vendor
                         </a>
                     </div>
                 </div>
-                <div class="element-box">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="element-box px-0">
                     <form>
-                        <div class="w-100" style="overflow: hidden;">
+                        <div class="table-responsive">
                             <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                                 <thead>
                                     <tr class="">
@@ -48,7 +49,7 @@
                                         <th>TIN</th>
                                         <th>State/MDA</th>
                                         <th>Date Created</th>
-                                        <th>Actions</th>
+                                        <th colspan="3">Actions</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
@@ -62,6 +63,7 @@
                                         <th>State/MDA</th>
                                         <th>Date Created</th>
                                         <th>Actions</th>
+                                        <th colspan="3">Actions</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
@@ -78,7 +80,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -95,7 +101,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -112,7 +122,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -129,7 +143,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -146,7 +164,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -163,7 +185,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -180,7 +206,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -197,7 +227,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -214,7 +248,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -231,7 +269,11 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
@@ -248,19 +290,24 @@
                                         <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
                                         <td class="action">
                                             <a class="btn btn-primary btn-sm" href="#" data-target="#pay" data-toggle="modal">Pay</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-dark btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                        </td>
+                                        <td class="action">
                                             <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="row pt-0">
-                                <div class="col-sm-12 col-md-12 col-lg-7 mb-2"></div>
-                                <div class="col-sm-12 col-md-4 col-lg-2 mb-2">
-                                    <a href="#" onclick="selectAll()" id="checker" class="btn-block mt-3 p-3 btn btn-white"><i class="icon-plus mr-3"></i>Select All</a>
+                            
+                            <div class="mx-0 my-4 pt-0 px-4 row">
+                                <div class="col-sm"></div>
+                                <div class="col-md-auto col-sm-12 mb-4">
+                                    <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
                                 </div>
-                                <div class="col-sm-12 col-md-8 col-lg-3 mb-2">
-                                    <a class="p-3 mt-3 btn btn-danger btn-block" href="#" data-target="#deletemultiple" data-toggle="modal"><i class="icon-feather-trash mr-2"></i>Delete Selected</a>
+                                <div class="col-md-auto col-sm-12">
+                                    <a class="btn p-3 px-5 btn-danger btn-block" href="#" data-target="#deletemultiple" data-toggle="modal"><i class="icon-feather-trash mr-2"></i>Delete Selected</a>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +315,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-1"></div> 
     </div>
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="add" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-lg modal-centered" role="document">

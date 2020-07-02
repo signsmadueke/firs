@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box mb-5">
+                <div class="element-box">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box">
+                <div class="element-box px-0">
                     <form>
                         <div class="steps-w">
                             <div class="step-trikkers">

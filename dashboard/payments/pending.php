@@ -8,11 +8,11 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box mb-5">
+                <div class="element-box">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
-                                <div class="os-icon os-icon-wallet-loaded"></div>
+                                <div class="icon-feather-loader"></div>
                             </div>
                             <div class="element-info-text">
                                 <h5 class="element-inner-header">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box">
+                <div class="element-box px-0">
                     <form>
                         <div class="steps-w">
                             <div class="step-trikkers">
@@ -43,7 +43,7 @@
                                         <table id="datatable" width="100%" class="table nowrap table table-hover table-lightfont">
                                             <thead>
                                                 <tr class="">
-                                                    <th class="invisible"></th>
+                                                    <th class="invisible" colspan="2"></th>
                                                     <th>Vendor</th>
                                                     <th>Payment Purpose</th>
                                                     <th>From</th>
@@ -59,7 +59,7 @@
                                             </thead>
                                             <tfoot>
                                                 <tr class="">
-                                                    <th class="invisible"></th>
+                                                    <th class="invisible" colspan="2"></th>
                                                     <th>Vendor</th>
                                                     <th>Payment Purpose</th>
                                                     <th>From</th>
@@ -77,6 +77,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -96,6 +98,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -115,6 +119,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -134,6 +140,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -153,6 +161,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -172,6 +182,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -191,6 +203,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -210,6 +224,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -229,26 +245,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-
                                                     </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td></td>
-                                                    <td>₦180,000.00</td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
                                                     <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -268,25 +266,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
-                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
-                                                    <td>UBIQUITE SOLUTIONS LTD</td>
-                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                    <td>0047017429 - Access Bank PLC</td>
-                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
-                                                    <td class="text-center">
-                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
-                                                    </td>
-                                                    <td>₦40,000,000.00</td>
-                                                    <td>₦200,000.00</td>
-                                                    <td>₦180,000.00</td>
-                                                    <td></td>
-                                                    <td>₦0.00</td>
-                                                    <td>₦0.00</td>
-                                                </tr>
-                                                <tr class="">
                                                     <td class="p-0">
-                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -306,6 +287,29 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
+                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
+                                                    </td>
+                                                    <td>UBIQUITE SOLUTIONS LTD</td>
+                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                    <td>0047017429 - Access Bank PLC</td>
+                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
+                                                    <td class="text-center">
+                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
+                                                    </td>
+                                                    <td>₦40,000,000.00</td>
+                                                    <td>₦200,000.00</td>
+                                                    <td>₦180,000.00</td>
+                                                    <td></td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td class="p-0">
+                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -325,6 +329,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -344,6 +350,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -363,6 +371,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -382,6 +392,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -401,6 +413,8 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
@@ -420,8 +434,9 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
-
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>
                                                     <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
@@ -440,6 +455,29 @@
                                                 <tr class="">
                                                     <td class="p-0">
                                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
+                                                        <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
+                                                    </td>
+                                                    <td>UBIQUITE SOLUTIONS LTD</td>
+                                                    <td>CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                    <td>0047017429 - Access Bank PLC</td>
+                                                    <td><span>Jan 9th</span><span class="smaller lighter">12:45pm</span></td>
+                                                    <td class="text-center">
+                                                        <span class="badge badge-primary-inverted" href="">Final Approval</span>
+                                                    </td>
+                                                    <td>₦40,000,000.00</td>
+                                                    <td>₦200,000.00</td>
+                                                    <td></td>
+                                                    <td>₦180,000.00</td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td class="p-0">
+                                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                                    </td>
+                                                    <td class="p-0">
                                                         <a href="view.php" class="text-primary p-3" data-placement="top" data-toggle="tooltip" data-original-title="View Payment"><i class="os-icon os-icon-eye"></i></a>
                                                     </td>
                                                     <td>UBIQUITE SOLUTIONS LTD</td>

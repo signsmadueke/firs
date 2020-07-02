@@ -177,7 +177,7 @@ body.full-screen .top-bar {
 }
 
 .skroll {
-    overflow: ;
+    overflow: auto;
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
@@ -2970,7 +2970,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-    background-color: rgba(18, 95, 142, 0.075);
+    background-color: rgba(76, 175, 80, 0.075);
 }
 
 .table-primary,
@@ -3251,6 +3251,20 @@ pre code {
 
 .table-responsive > .table-bordered {
     border: 0;
+}
+
+#datatable_wrapper.container-fluid {
+  padding: 0;
+}
+
+.table tr td:first-child,
+.table tr th:first-child {
+  padding-left: 20px !important;
+}
+
+.table tr td:last-child,
+.table tr th:last-child {
+  padding-right: 30px !important;
 }
 
 .form-control {
@@ -13487,6 +13501,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     padding-right: 0;
 }
 
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_length {
+    padding: 0 20px;
+}
+
 /* 5. Handy Animations  */
 @-webkit-keyframes fadeLeft {
     0% {
@@ -14491,7 +14510,7 @@ body.menu-side-right .layout-w {
     list-style: none;
     text-align: left;
     margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 10px;
     padding-bottom: 20px;
 }
 

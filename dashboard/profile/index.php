@@ -6,89 +6,109 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="element-wrapper col-sm-12">
-            <h6 class="element-header">
-                <?php echo $title; ?>
-            </h6>
-            <div class="user-profile compact mb-4 p-5">
-                <div class="col-sm-12 p-0">
-                    <div class="users-list-w">
-                        <div class="user-w with-status status-green p-0">
-                            <div class="user-name p-0">
-                                <h3 class="user-title">
-                                    <strong>Signs Madueke</strong>
-                                </h3>
-                                <div class="user-role mt-2">
-                                    <strong>User</strong>
-                                </div>
-                                <div class="mt-2 d-md-none">
-                                    <button class="col-sm-3 p-2 btn btn-primary btn-sm mb-2" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
-                                    <button class="col-sm-3 p-2 btn btn-outline-primary btn-sm mb-2 ml-0" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
-                                </div>
-                                <div class="mt-2 d-none d-md-block">
-                                    <button class="btn btn-primary" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
-                                    <button class="btn btn-outline-primary" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="element-box">
+                    <div class="pt-3 pb-3">
+                        <div class="element-info-with-icon m-0">
+                            <div class="element-info-icon">
+                                <div class="icon-user"></div>
+                            </div>
+                            <div class="element-info-text">
+                                <h5 class="element-inner-header">
+                                    User Profile
+                                </h5>
+                                <div class="element-inner-desc">
+                                    Edit your profile details and change our password
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="element-wrapper p-0">
-                    <div class="pt-5 p-0">
-                        <form>
-                            <div class="element-info mb-4 pb-4">
-                                <div class="element-info-text">
-                                    <h4 class="element-inner-header">
-                                        Profile Details
-                                    </h4>
-                                    <div class="element-inner-desc">
-                                        All the info we have about you.
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="user-profile compact mb-4 p-5">
+                    <div class="col-sm-12 p-0">
+                        <div class="users-list-w">
+                            <div class="user-w with-status status-green p-0">
+                                <div class="user-name p-0">
+                                    <h3 class="user-title">
+                                        <strong>Signs Madueke</strong>
+                                    </h3>
+                                    <div class="user-role mt-2">
+                                        <strong>User</strong>
+                                    </div>
+                                    <div class="mt-2 d-md-none">
+                                        <button class="col-sm-3 p-2 btn btn-primary btn-sm mb-2" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
+                                        <button class="col-sm-3 p-2 btn btn-outline-primary btn-sm mb-2 ml-0" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
+                                    </div>
+                                    <div class="mt-2 d-none d-md-block">
+                                        <button class="btn btn-primary" data-target="#editProfileModal" data-toggle="modal" type="button">Edit Profile</button>
+                                        <button class="btn btn-outline-primary" data-target="#changePasswordModal" data-toggle="modal" type="button">Change Password</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">Last Name</label>
-                                        <input readonly class="form-control" value="Madueke" type="text">
+                        </div>
+                    </div>
+                    <div class="element-wrapper p-0">
+                        <div class="pt-5 p-0">
+                            <form>
+                                <div class="element-info mb-4 pb-4">
+                                    <div class="element-info-text">
+                                        <h4 class="element-inner-header">
+                                            Profile Details
+                                        </h4>
+                                        <div class="element-inner-desc">
+                                            All the info we have about you.
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">First Name</label>
-                                        <input readonly class="form-control" value="Signs" type="text">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Last Name</label>
+                                            <input readonly class="form-control" value="Madueke" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">First Name</label>
+                                            <input readonly class="form-control" value="Signs" type="text">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">Phone Number</label>
-                                        <input readonly class="form-control" value="0801 234 5678" type="text">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Phone Number</label>
+                                            <input readonly class="form-control" value="0801 234 5678" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Email address</label>
+                                            <input readonly class="form-control" value="signs@madueke.com" type="text">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">Email address</label>
-                                        <input readonly class="form-control" value="signs@madueke.com" type="text">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <label for="">User Status</label>
+                                            <input readonly class="form-control" value="Active" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <label for="">State</label>
+                                            <input readonly class="form-control" value="Enugu State" type="text">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <label for="">User Status</label>
-                                        <input readonly class="form-control" value="Active" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <label for="">State</label>
-                                        <input readonly class="form-control" value="Enugu State" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +236,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

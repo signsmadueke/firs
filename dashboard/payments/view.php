@@ -6,12 +6,9 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-lg-11">
+        <div class="col-sm-12">
             <div class="element-wrapper">
-                <h6 class="element-header">
-                    <?php echo $title; ?>
-                </h6>
-                <div class="element-box mb-5">
+                <div class="element-box">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
@@ -28,13 +25,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="element-box">
-                    <div class="row border-bottom py-5">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="element-box px-0 pb-0">
+                    <div class="row border-bottom py-5 mx-0">
                         <div class="col-12 text-center">
                             <img src="../../assets/img/firs.png" alt="" width="150px">
                         </div>
                     </div>
-                    <div class="row border-bottom py-5">
+                    <div class="row border-bottom py-5 mx-0">
                         <div class="col-6 text-right">
                             <p>Payment From</p>
                             <h4>Enugu State Government</h4>
@@ -58,7 +59,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row py-5">
+                    <div class="row py-5 mx-3">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="element-box el-tablo bg-background">
                                 <div class="label text-light">
@@ -144,7 +145,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-1"></div> 
     </div>
 
 

@@ -6,12 +6,9 @@
 ?>
 <div class="content-box">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-lg-11">
+        <div class="col-sm-12">
             <div class="element-wrapper">
-                <h6 class="element-header">
-                    <?php echo $title; ?>
-                </h6>
-                <div class="element-box mb-5">
+                <div class="element-box">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
@@ -28,8 +25,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="element-box">
-                    <div class="w-100" style="overflow: hidden;">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="element-wrapper">
+                <div class="element-box px-0">
+                    <div class="table-responsive">
                         <table id="datatable-sm" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>
                                 <tr class="">
@@ -88,7 +89,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-1"></div> 
     </div>
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="edit" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-lg modal-centered" role="document">

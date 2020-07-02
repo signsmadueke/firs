@@ -86,7 +86,7 @@
                             </a>
                         </li>
                         <li <?php if ($title == "Tax Payers"){echo "class=\"active\"";} ?>>
-                            <a href="tax-payers">
+                            <a href="../tax-payers">
                                 <div class="icon-w">
                                     <div class="icon-feather-file-text"></div>
                                 </div>
@@ -246,7 +246,7 @@
                         </a>
                     </li>
                     <li <?php if ($title == "Tax Payers"){echo "class=\"active\"";} ?>>
-                        <a href="tax-payers">
+                        <a href="../tax-payers">
                             <div class="icon-w">
                                 <div class="icon-feather-file-text"></div>
                             </div><span>Tax Payers</span>
@@ -306,7 +306,7 @@
                         <img width="70px" src="../../assets/img/firs.png" alt="FIRS">
                     </div>
                     <div class="col-12 text-center p-0">
-                        <p class="label m-0">Copyright © 2020 Elnino Technologies</p>
+                        <p class="label m-0">Copyright © 2020<br>Elnino Technologies</p>
                     </div>
                 </div>
             </div>

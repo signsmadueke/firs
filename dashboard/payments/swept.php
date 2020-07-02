@@ -8,11 +8,11 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="element-wrapper">
-                <div class="element-box mb-5">
+                <div class="element-box">
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
-                                <div class="os-icon os-icon-wallet-loaded"></div>
+                                <div class="icon-feather-check-circle"></div>
                             </div>
                             <div class="element-info-text">
                                 <h5 class="element-inner-header">

@@ -310,7 +310,7 @@ $title = 'Dashboard';
                         <img width="70px" src="../assets/img/firs.png" alt="FIRS">
                     </div>
                     <div class="col-12 text-center p-0">
-                        <p class="label m-0">Copyright © 2020 Elnino Technologies</p>
+                        <p class="label m-0">Copyright © 2020<br>Elnino Technologies</p>
                     </div>
                 </div>
             </div>
@@ -336,7 +336,7 @@ $title = 'Dashboard';
                                                                 Payments Overview
                                                             </h5>
                                                             <div class="element-inner-desc">
-                                                                All Payments VAT, WHT & Stamp Duty that have been made this month
+                                                                All Payments VAT, WHT & Stamp Duty that have been made
                                                             </div>
                                                         </div>
                                                     </div>
