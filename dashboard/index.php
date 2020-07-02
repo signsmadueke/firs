@@ -319,10 +319,10 @@ $title = 'Dashboard';
                                                             Total Payments
                                                         </div>
                                                         <div class="balance-value">
-                                                            <strong>₦657,660</strong>
+                                                            <strong>1609</strong>
                                                         </div>
                                                         <div class="balance-link">
-                                                            <a class="btn btn-link btn-underlined" href="#"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined" href="payments"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                     <div class="balance el-tablo mt-4 mb-4">
@@ -330,10 +330,10 @@ $title = 'Dashboard';
                                                             Swept Payments
                                                         </div>
                                                         <div class="balance-value">
-                                                            <strong>₦364,000</strong>
+                                                            <strong>1580</strong>
                                                         </div>
                                                         <div class="balance-link">
-                                                            <a class="btn btn-link btn-underlined" href="#"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined" href="payments"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                     <div class="balance el-tablo mt-4 mb-4">
@@ -341,10 +341,10 @@ $title = 'Dashboard';
                                                             Pending Payments
                                                         </div>
                                                         <div class="balance-value">
-                                                            <strong>₦115,000</strong>
+                                                            <strong>29</strong>
                                                         </div>
                                                         <div class="balance-link">
-                                                            <a class="btn btn-link btn-underlined" href="#"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined" href="payments"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -361,7 +361,7 @@ $title = 'Dashboard';
                                     </h6>
                                     <div class="element-box-tp">
                                         <div class="table-responsive">
-                                            <table class="table table-padded">
+                                            <table class="table table-padded nowrap table-lightborder table-lightfont">
                                                 <thead>
                                                     <tr>
                                                         <th>TID</th>
@@ -374,64 +374,64 @@ $title = 'Dashboard';
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller green"></span><span>Complete</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller green"></span><span>Complete</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller green"></span><span>Complete</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="nowrap">2214</td>
+                                                        <td>2214</td>
                                                         <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
                                                         <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
                                                         <td class="nowrap">
                                                             <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                         </td>
-                                                        <td class="nowrap">₦40,000</td>
-                                                        <td class="nowrap">₦200,000.00</td>
+                                                        <td>₦40,000</td>
+                                                        <td>₦200,000.00</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -439,6 +439,133 @@ $title = 'Dashboard';
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-sm-12">
+                                <div class="element-wrapper">
+                                    <div class="element-box">
+                                        <div class="element-info">
+                                            <div class="row align-items-center">
+                                                <div class="col-sm-12">
+                                                    <div class="element-info-with-icon">
+                                                        <div class="element-info-icon">
+                                                            <i class="icon-feather-clock"></i>
+                                                        </div>
+                                                        <div class="element-info-text">
+                                                            <h5 class="element-inner-header">
+                                                                Pending Payments
+                                                            </h5>
+                                                            <div class="element-inner-desc">
+                                                                List of pending payments with ageing period and days count since payment initiated
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element-box-tp">
+                                            <div class="table-responsive">
+                                                <table class="table nowrap table table-hover table-lightborder table-lightfont">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>TID</th>
+                                                            <th>Vendor</th>
+                                                            <th>Payment Purpose</th>
+                                                            <th>Status</th>
+                                                            <th>Days</th>
+                                                            <th>Penalty Due</th>
+                                                            <th>VAT</th>
+                                                            <th>WHT</th>
+                                                            <th>Stamp Duty</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦20,000.00</td>
+                                                            <td>₦40,000</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                             <!-- Payments Today -->
                             <div class="col-sm-12">
