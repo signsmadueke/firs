@@ -499,6 +499,119 @@ $title = 'Dashboard';
                                 </div>
                             </div>
 
+
+                            <div class="col-sm-12">
+                                <div class="element-wrapper">
+                                    <div class="element-box">
+                                        <div class="element-info">
+                                            <div class="row align-items-center">
+                                                <div class="col-sm-12">
+                                                    <div class="element-info-with-icon">
+                                                        <div class="element-info-icon">
+                                                            <i class="icon-feather-check-circle"></i>
+                                                        </div>
+                                                        <div class="element-info-text">
+                                                            <h5 class="element-inner-header">
+                                                                Swept Payments
+                                                            </h5>
+                                                            <div class="element-inner-desc">
+                                                                All payments that have been swept
+                                                            </div>
+                                                            <a class="btn btn-link btn-underlined smaller" href="payments/swept.php"><span>View all swept payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element-box-tp">
+                                            <div class="table-responsive">
+                                                <table id="datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>TID</th>
+                                                            <th>Vendor</th>
+                                                            <th>Payment Purpose</th>
+                                                            <th>Status</th>
+                                                            <th>VAT</th>
+                                                            <th>WHT</th>
+                                                            <th>Stamp Duty</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2214</td>
+                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
+                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>₦200,000.00</td>
+                                                            <td>₦200,000.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
                                     <div class="element-box">
@@ -624,119 +737,6 @@ $title = 'Dashboard';
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-sm-12">
-                                <div class="element-wrapper">
-                                    <div class="element-box">
-                                        <div class="element-info">
-                                            <div class="row align-items-center">
-                                                <div class="col-sm-12">
-                                                    <div class="element-info-with-icon">
-                                                        <div class="element-info-icon">
-                                                            <i class="icon-feather-check-circle"></i>
-                                                        </div>
-                                                        <div class="element-info-text">
-                                                            <h5 class="element-inner-header">
-                                                                Swept Payments
-                                                            </h5>
-                                                            <div class="element-inner-desc">
-                                                                All payments that have been swept
-                                                            </div>
-                                                            <a class="btn btn-link btn-underlined smaller" href="payments/swept.php"><span>View all swept payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="element-box-tp">
-                                            <div class="table-responsive">
-                                                <table id="datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>TID</th>
-                                                            <th>Vendor</th>
-                                                            <th>Payment Purpose</th>
-                                                            <th>Status</th>
-                                                            <th>VAT</th>
-                                                            <th>WHT</th>
-                                                            <th>Stamp Duty</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
 
                             <!-- Payments Today -->
                             <div class="col-sm-12">
