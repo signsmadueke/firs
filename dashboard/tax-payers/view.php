@@ -17,7 +17,7 @@
                                     Tax Payers
                                 </h5>
                                 <div class="element-inner-desc">
-                                    View, create, edit and delete ministries
+                                    View, create, edit and delete tax payers
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                     <div class="col-sm-auto mt-4 mt-lg-0">
                         <a class="btn btn-block btn-primary el-tablo m-0 p-3 pl-4 pr-4 text-white" href="#" data-target="#add" data-toggle="modal">
                             <i class="icon-feather-plus-circle mr-2"></i>
-                            Add Ministry
+                            Add Tax Payer
                         </a>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                                 <tr class="">
                                     <td>Ministry of Agric</td>
                                     <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
                                     </td>
                                     <td class="action">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -65,7 +65,7 @@
                                 <tr class="">
                                     <td>Ministry of Commerce & Industries</td>
                                     <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
                                     </td>
                                     <td class="action">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -77,7 +77,7 @@
                                 <tr class="">
                                     <td>Ministry of Health</td>
                                     <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
                                     </td>
                                     <td class="action">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -89,7 +89,7 @@
                                 <tr class="">
                                     <td>Ministry of Information</td>
                                     <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
                                     </td>
                                     <td class="action">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -203,7 +203,7 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title">
-                        Edit Ministry
+                        Edit Tax Payer Details
                     </h4>
                     <div class="onboarding-text">
                         Change the information about Ministry of Agric
@@ -212,7 +212,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
+                                    <label for="lname">Tax Payers Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                                 <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>
                             </div>
                             <div class="col-sm-12 col-md-8 mb-2">
-                                <input name="submit" class="btn btn-primary btn-block" value="Update Ministry" type="submit">
+                                <input name="submit" class="btn btn-primary btn-block" value="Update Tax Payers Details" type="submit">
                             </div>
                         </div>
                     </form>
@@ -235,19 +235,19 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title text-danger">
-                        Are you sure you want to permanently delete this ministry?
+                        Are you sure you want to permanently delete this Tax Payer's account?
                     </h4>
                     <div class="onboarding-text">
-                        Once you delete this ministry it cannot be reversed.
+                        Once you delete this account all the Tax Payer's payments will be cleared too. This action cannot be reversed.
                         <br>
-                        <strong>Are you sure you want to delete this ministry?</strong>
+                        <strong>Are you sure you want to delete this account?</strong>
                     </div>
                     <div class="row pt-4">
                         <div class="col-sm-12 col-md-4 mb-2">
                             <button class="btn btn-secondary btn-block" data-dismiss="modal" type="button">Cancel</button>
                         </div>
                         <div class="col-sm-12 col-md-8 mb-2">
-                            <button class="btn btn-danger btn-block" data-dismiss="modal">Delete Ministry</button>
+                            <button class="btn btn-danger btn-block" data-dismiss="modal">Delete Tax Payers Account</button>
                         </div>
                     </div>
                 </div>
