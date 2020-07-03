@@ -115,72 +115,13 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title">
-                        Tax Payers
+                        Add Ministry
                     </h4>
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="fname">First Name</label><input name="name" class="form-control" data-error="Please input the First Name" placeholder="eg: John" required="required" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="lname">Last Name</label><input name="lname" class="form-control" data-error="Please input the Last Name" placeholder="eg: Doe" required="required" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="lname">Username</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input name="password_new" id="password" class="form-control" data-error="Please input the user's password" placeholder="Input your new password" required="required" type="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="password2">Re-type Password</label>
-                                    <input name="password_new_again" id="password2" class="form-control" data-error="Please re-type the user's password" placeholder="Re-type your new password" required="required" type="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="">User Role</label>
-                                    <select class="form-control" name="bank">
-                                        <option>Admin</option>
-                                        <option selected>User</option>
-                                        <option>Supervisor</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="status">User Status</label>
-                                    <select class="form-control" name="status">
-                                        <option value="Zenith Bank">Active</option>
-                                        <option value="Zenith Bank">Inactive</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="">State</label>
-                                    <select class="form-control" name="ctype">
-                                        <option>Enugu State</option>
-                                    </select>
+                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
                                 </div>
                             </div>
                         </div>
@@ -189,7 +130,7 @@
                                 <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>
                             </div>
                             <div class="col-sm-12 col-md-8 mb-2">
-                                <input name="submit" class="btn btn-primary btn-block" value="Add User" type="submit">
+                                <input name="submit" class="btn btn-primary btn-block" value="Add Ministry" type="submit">
                             </div>
                         </div>
                     </form>

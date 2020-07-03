@@ -12,14 +12,14 @@
                     <div class="pt-3 pb-3">
                         <div class="element-info-with-icon m-0">
                             <div class="element-info-icon">
-                                <div class="os-icon os-icon-wallet-loaded"></div>
+                                <div class="icon-feather-loader"></div>
                             </div>
                             <div class="element-info-text">
                                 <h5 class="element-inner-header">
-                                    Vendor Payments
+                                    Pending Vendor Payments
                                 </h5>
                                 <div class="element-inner-desc">
-                                    All Payments that has occurred
+                                    All Pending Vendor Payments
                                 </div>
                             </div>
                         </div>
@@ -33,8 +33,8 @@
                     <form>
                         <div class="steps-w">
                             <div class="step-trikkers">
-                                <a class="step-trikker active" href="">All Payments</a>
-                                <a class="step-trikker" href="unswept.php">Unswept Payments</a>
+                                <a class="step-trikker" href="index.php">All Payments</a>
+                                <a class="step-trikker active" href="">Unswept Payments</a>
                                 <a class="step-trikker" href="swept.php">Swept Payments</a>
                             </div>
                             <div class="step-contents">
@@ -42,7 +42,7 @@
                                     <div class="table-responsive">
                                         <table id="datatable" width="100%" class="table nowrap table table-hover table-lightfont">
                                             <thead>
-                                                <tr>
+                                                <tr class="">
                                                     <th class="invisible" colspan="2"></th>
                                                     <th>VENDOR</th>
                                                     <th>PAYMENT PURPOSE</th>
@@ -55,11 +55,10 @@
                                                     <th>REF</th>
                                                     <th>VAT</th>
                                                     <th>LEVIES</th>
-                                                    <th>ACTIONS</th>
                                                 </tr>
                                             </thead>
                                             <tfoot>
-                                                <tr>
+                                                <tr class="">
                                                     <th class="invisible" colspan="2"></th>
                                                     <th>VENDOR</th>
                                                     <th>PAYMENT PURPOSE</th>
@@ -72,7 +71,6 @@
                                                     <th>REF</th>
                                                     <th>VAT</th>
                                                     <th>LEVIES</th>
-                                                    <th>ACTIONS</th>
                                                 </tr>
                                             </tfoot>
                                             <tbody>
@@ -94,11 +92,8 @@
                                                     <td>₦73,781,102</td>
                                                     <td>₦4,145,006</td>
                                                     <td>ENU/FIRS0001/IR</td>
-                                                    <td>₦4,145,006</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -118,11 +113,8 @@
                                                     <td>₦106,456,508</td>
                                                     <td>₦5,980,703</td>
                                                     <td>ENU/FIRS0002/IR</td>
-                                                    <td>₦5,980,703</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -142,11 +134,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0003/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -166,11 +155,8 @@
                                                     <td>₦7,386,995</td>
                                                     <td>₦415,000</td>
                                                     <td>ENU/FIRS0004/IR</td>
-                                                    <td>₦415,000</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -190,11 +176,8 @@
                                                     <td>₦21,395,212</td>
                                                     <td>₦1,201,978</td>
                                                     <td>ENU/FIRS0005/IR</td>
-                                                    <td>₦1,201,978</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -214,11 +197,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0033/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -238,11 +218,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0034/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -262,11 +239,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0035/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -286,11 +260,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0036/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -310,11 +281,8 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0037/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -334,22 +302,19 @@
                                                     <td>₦6,357,143</td>
                                                     <td>₦357,143</td>
                                                     <td>ENU/FIRS0038/IR</td>
-                                                    <td>₦357,143</td>
-                                                    <td>₦4,006</td>
-                                                    <td class="action">
-                                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
-                                                    </td>
+                                                    <td>₦0.00</td>
+                                                    <td>₦0.00</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                    <div class="mx-0 my-4 pt-0 px-4 row">
-                                        <div class="col-sm"></div>
-                                        <div class="col-md-auto col-sm-12 mb-4">
-                                            <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
-                                        </div>
-                                        <div class="col-md-auto col-sm-12">
-                                            <button class="btn p-3 px-5 btn-primary btn-block" type="submit">Approve Selected<i class="icon-feather-check ml-2"></i></button>
+                                        <div class="mx-0 mt-4 pt-0 px-4 row">
+                                            <div class="col-sm"></div>
+                                            <div class="col-md-auto col-sm-12 mb-4">
+                                                <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
+                                            </div>
+                                            <div class="col-md-auto col-sm-12 mb-4">
+                                                <button class="btn p-3 px-5 btn-primary btn-block" type="submit">Approve Selected<i class="icon-feather-check ml-2"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -360,6 +325,8 @@
             </div>
         </div>
     </div>
-<?php
+
+
+    <?php
     require_once '../includes/footer.php';
 ?>

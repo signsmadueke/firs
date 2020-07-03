@@ -13297,6 +13297,13 @@ table.dataTable.nowrap td {
     white-space: normal;
 }
 
+@media (max-width: 1000px) {
+    table.dataTable.nowrap th,
+    table.dataTable.nowrap td {
+        white-space: nowrap;
+    }
+}
+
 div.dataTables_wrapper div.dataTables_length label {
     font-weight: normal;
     text-align: left;

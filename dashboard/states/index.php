@@ -1,8 +1,8 @@
  <?php
     $title = 'States';
     require_once '../includes/header.php';
-    require_once '../includes/bgcolor.php';
-    require_once '../includes/chat.php';
+    // require_once '../includes/bgcolor.php';
+    // require_once '../includes/chat.php';
 ?>
 <div class="content-box">
     <div class="row">

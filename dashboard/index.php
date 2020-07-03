@@ -347,7 +347,7 @@ $title = 'Dashboard';
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="element-balances">
-                                                    <div class="balance el-tablo mt-4 mb-4">
+                                                    <div class="balance hidden-mobile el-tablo mt-4 mb-4">
                                                         <div class="balance-title">
                                                             Total Payments
                                                         </div>
@@ -366,7 +366,7 @@ $title = 'Dashboard';
                                                             <strong>1580</strong>
                                                         </div>
                                                         <div class="balance-link">
-                                                            <a class="btn btn-link btn-underlined" href="payments"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined" href="payments/swept.php"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                     <div class="balance el-tablo mt-4 mb-4">
@@ -377,7 +377,7 @@ $title = 'Dashboard';
                                                             <strong>29</strong>
                                                         </div>
                                                         <div class="balance-link">
-                                                            <a class="btn btn-link btn-underlined" href="payments"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined" href="payments/unswept.php"><span>View Details</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -412,84 +412,162 @@ $title = 'Dashboard';
                                         </div>
                                         <div class="element-box-tp">
                                             <div class="table-responsive">
-                                                <table id="datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
+                                                <table id="overview-recent-datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
                                                     <thead>
                                                         <tr>
                                                             <th>TID</th>
-                                                            <th>Vendor</th>
-                                                            <th>Payment Purpose</th>
-                                                            <th>Status</th>
+                                                            <th>VENDOR</th>
+                                                            <th>PAYMENT PURPOSE</th>
+                                                            <th>STATUS</th>
                                                             <th>VAT</th>
-                                                            <th>WHT</th>
-                                                            <th>Stamp Duty</th>
+                                                            <th>AMOUNT</th>
+                                                            <th>STAMP DUTY</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>1</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
+                                                            
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller red"></span><span>Unswept</span>
+                                                            </td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>4</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>5</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>6</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller red"></span><span>Unswept</span>
+                                                            </td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller red"></span><span>Unswept</span>
+                                                            </td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>11</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>12</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -525,84 +603,161 @@ $title = 'Dashboard';
                                         </div>
                                         <div class="element-box-tp">
                                             <div class="table-responsive">
-                                                <table id="datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
+                                                <table id="overview-swept-datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
                                                     <thead>
                                                         <tr>
                                                             <th>TID</th>
-                                                            <th>Vendor</th>
-                                                            <th>Payment Purpose</th>
-                                                            <th>Status</th>
+                                                            <th>VENDOR</th>
+                                                            <th>PAYMENT PURPOSE</th>
+                                                            <th>STATUS</th>
                                                             <th>VAT</th>
-                                                            <th>WHT</th>
-                                                            <th>Stamp Duty</th>
+                                                            <th>AMOUNT</th>
+                                                            <th>STAMP DUTY</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>1</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
-                                                            <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
-                                                            </td>
                                                             <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>3</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>4</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>5</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>6</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
                                                             <td class="nowrap">
-                                                                <span class="status-pill smaller green"></span><span>Complete</span>
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller green"></span><span>Swept</span>
+                                                            </td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -637,12 +792,12 @@ $title = 'Dashboard';
                                         </div>
                                         <div class="element-box-tp">
                                             <div class="table-responsive">
-                                                <table id="datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
+                                                <table id="overview-pending-datatable" width="100%" class="table nowrap table table-hover table-lightborder table-lightfont">
                                                     <thead>
                                                         <tr>
                                                             <th>TID</th>
-                                                            <th>Vendor</th>
-                                                            <th>Payment Purpose</th>
+                                                            <th>VENDOR</th>
+                                                            <th>PAYMENT PURPOSE</th>
                                                             <th>Status</th>
                                                             <th>Days</th>
                                                             <th>Penalty Due</th>
@@ -653,82 +808,173 @@ $title = 'Dashboard';
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>1</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
                                                             <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>₦82,900</td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>2</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>6</td>
+                                                            <td>₦119,614</td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>3</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>5</td>
+                                                            <td>₦7,142</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>4</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>8</td>
+                                                            <td>₦8,299</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>5</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>3</td>
+                                                            <td>₦24,039</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2214</td>
-                                                            <td class="nowrap">UBIQUITE SOLUTIONS LTD</td>
-                                                            <td class="nowrap">CONSTRUCTION OF MBIAMA ROUNDABOUT</td>
+                                                            <td>6</td>
+                                                            <td>FEROTEX CONSTRUCTION</td>
+                                                            <td>CONSTRUCTION OF OBECHARA - BISHOP SHANAHAN ENUGU ROAD</td>
                                                             <td class="nowrap">
                                                                 <span class="status-pill smaller yellow"></span><span>Pending</span>
                                                             </td>
-                                                            <td>2</td>
-                                                            <td>₦20,000.00</td>
-                                                            <td>₦40,000</td>
-                                                            <td>₦200,000.00</td>
-                                                            <td>₦200,000.00</td>
+                                                            <td>5</td>
+                                                            <td>₦82,900</td>
+                                                            <td>₦4,145,006</td>
+                                                            <td>₦82,900,114</td>
+                                                            <td>₦4,145,006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>COPEN SERVICE LTD</td>
+                                                            <td>CONTRUCTION OF ZONAL SECRETARIAT AT NSUKKA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>11</td>
+                                                            <td>₦119,614</td>
+                                                            <td>₦5,980,703</td>
+                                                            <td>₦119,614,053</td>
+                                                            <td>₦5,980,703</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>₦7,142</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>12</td>
+                                                            <td>₦8,299</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>3</td>
+                                                            <td>₦24,039</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>INDIANA COMPANY LTD</td>
+                                                            <td>CONSTRUCTION OF MODEL CUSTOMARY COURT NGWO, ENUGU</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>5</td>
+                                                            <td>₦7,142</td>
+                                                            <td>₦357,143</td>
+                                                            <td>₦7,142,857</td>
+                                                            <td>₦357,143</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>GOJOPAL NIGERIA LTD</td>
+                                                            <td>CONTRUCTION OF MODEL CUSTOMARY COURT ENUGU SOUTH LGA</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>7</td>
+                                                            <td>₦8,299</td>
+                                                            <td>₦415,000</td>
+                                                            <td>₦8,299,994</td>
+                                                            <td>₦415,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>ANBEEZ SERVICE LIMITED</td>
+                                                            <td>CONSTRUCTION OF 200 BEDDED ADADA SPECIALIST HOSPITAL</td>
+                                                            <td class="nowrap">
+                                                                <span class="status-pill smaller yellow"></span><span>Pending</span>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>₦24,039</td>
+                                                            <td>₦1,201,978</td>
+                                                            <td>₦24,039,564</td>
+                                                            <td>₦1,201,978</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

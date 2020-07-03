@@ -71,9 +71,34 @@ $(document).ready( function () {
         // responsive: true
     });
     $('#datatable-sm').DataTable({
-        paging: false
+        // paging: false
     });
 
+    $('#datatable-sm.with-buttons').DataTable({
+        buttons: [
+            'copy', 'excel', 'pdf', 'excelHtml5', 'csvHtml5'
+        ]
+
+
+    });
+
+    $('#overview-swept-datatable').DataTable({
+        buttons: [
+            'copy', 'excel', 'pdf', 'excelHtml5', 'csvHtml5'
+        ]
+    });
+
+    $('#overview-pending-datatable').DataTable({
+        buttons: [
+            'copy', 'excel', 'pdf', 'excelHtml5', 'csvHtml5'
+        ]
+    });
+
+    $('#overview-recent-datatable').DataTable({
+        buttons: [
+            'copy', 'excel', 'pdf', 'excelHtml5', 'csvHtml5'
+        ]
+    });
 } );
 
 
