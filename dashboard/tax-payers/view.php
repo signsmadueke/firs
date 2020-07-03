@@ -14,10 +14,10 @@
                             </div>
                             <div class="element-info-text">
                                 <h5 class="element-inner-header">
-                                    Tax Payers
+                                    Ministry of Information
                                 </h5>
                                 <div class="element-inner-desc">
-                                    View, create, edit and delete tax payers
+                                    View, create, edit and delete Revenue Items in Ministry of Information
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                     <div class="col-sm-auto mt-4 mt-lg-0">
                         <a class="btn btn-block btn-primary el-tablo m-0 p-3 pl-4 pr-4 text-white" href="#" data-target="#add" data-toggle="modal">
                             <i class="icon-feather-plus-circle mr-2"></i>
-                            Add Tax Payer
+                            Add Revenue Item
                         </a>
                     </div>
                 </div>
@@ -39,67 +39,173 @@
                         <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>
                                 <tr class="">
-                                    <th>Ministry Name</th>
-                                    <th colspan="3">Actions</th>
+                                	<th class="invisible"></th>
+                                    <th>Revenue Item</th>
+                                    <th colspan="3" align="right">Actions</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr class="">
-                                    <th>Ministry Name</th>
-                                    <th colspan="3">Actions</th>
-                                </tr>
-                            </tfoot>
                             <tbody>
                                 <tr class="">
-                                    <td>Ministry of Agric</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td class="action">
+                                    <td>Market Taxes and Levies where State finance is involved</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
-                                    <td>Ministry of Commerce & Industries</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td class="action">
+                                    <td>Land use charge, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
-                                    <td>Ministry of Health</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td class="action">
+                                    <td>Entertainment Tax, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
-                                    <td>Ministry of Information</td>
-                                    <td class="action">
-                                        <a class="btn btn-primary btn-sm" href="view.php" data-toggle="modal">View</a>
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td class="action">
+                                    <td>Entertainment Tax, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Mining, milling and quarrying fee</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Market Taxes and Levies where State finance is involved</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Land use charge, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Entertainment Tax, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Entertainment Tax, where applicable</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
+                                        <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                	<td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
+                                    <td>Mining, milling and quarrying fee</td>
+                                    <td class="actions" align="left">
+                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                    </td>
+                                    <td class="actions" align="center">
+                                        <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
+                                    </td>
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="mx-0 mt-4 pt-0 px-4 row">
+                        <div class="col-sm"></div>
+                        <div class="col-md-auto col-sm-12 mb-4">
+                            <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
+                        </div>
+                        <div class="col-md-auto col-sm-12">
+                            <button class="btn p-3 px-5 btn-danger btn-block" type="submit">Delete Selected<i class="icon-feather-trash ml-2"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,72 +221,13 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title">
-                        Tax Payers
+                        Add Ministry
                     </h4>
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="fname">First Name</label><input name="name" class="form-control" data-error="Please input the First Name" placeholder="eg: John" required="required" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="lname">Last Name</label><input name="lname" class="form-control" data-error="Please input the Last Name" placeholder="eg: Doe" required="required" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="lname">Username</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input name="password_new" id="password" class="form-control" data-error="Please input the user's password" placeholder="Input your new password" required="required" type="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="password2">Re-type Password</label>
-                                    <input name="password_new_again" id="password2" class="form-control" data-error="Please re-type the user's password" placeholder="Re-type your new password" required="required" type="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="">User Role</label>
-                                    <select class="form-control" name="bank">
-                                        <option>Admin</option>
-                                        <option selected>User</option>
-                                        <option>Supervisor</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="status">User Status</label>
-                                    <select class="form-control" name="status">
-                                        <option value="Zenith Bank">Active</option>
-                                        <option value="Zenith Bank">Inactive</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="">State</label>
-                                    <select class="form-control" name="ctype">
-                                        <option>Enugu State</option>
-                                    </select>
+                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Ministry Name" placeholder="eg: Ministry of Power" required="required" type="text">
                                 </div>
                             </div>
                         </div>
@@ -189,7 +236,7 @@
                                 <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>
                             </div>
                             <div class="col-sm-12 col-md-8 mb-2">
-                                <input name="submit" class="btn btn-primary btn-block" value="Add User" type="submit">
+                                <input name="submit" class="btn btn-primary btn-block" value="Add Ministry" type="submit">
                             </div>
                         </div>
                     </form>
@@ -203,7 +250,7 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title">
-                        Edit Tax Payer Details
+                        Edit Ministry
                     </h4>
                     <div class="onboarding-text">
                         Change the information about Ministry of Agric
@@ -212,7 +259,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="lname">Tax Payers Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
+                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
                                 </div>
                             </div>
                         </div>
@@ -221,7 +268,7 @@
                                 <button class="btn btn-white btn-block" data-dismiss="modal" type="button">Cancel</button>
                             </div>
                             <div class="col-sm-12 col-md-8 mb-2">
-                                <input name="submit" class="btn btn-primary btn-block" value="Update Tax Payers Details" type="submit">
+                                <input name="submit" class="btn btn-primary btn-block" value="Update Ministry" type="submit">
                             </div>
                         </div>
                     </form>
@@ -235,19 +282,19 @@
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
                     <h4 class="onboarding-title text-danger">
-                        Are you sure you want to permanently delete this Tax Payer's account?
+                        Are you sure you want to permanently delete this ministry?
                     </h4>
                     <div class="onboarding-text">
-                        Once you delete this account all the Tax Payer's payments will be cleared too. This action cannot be reversed.
+                        Once you delete this ministry it cannot be reversed.
                         <br>
-                        <strong>Are you sure you want to delete this account?</strong>
+                        <strong>Are you sure you want to delete this ministry?</strong>
                     </div>
                     <div class="row pt-4">
                         <div class="col-sm-12 col-md-4 mb-2">
                             <button class="btn btn-secondary btn-block" data-dismiss="modal" type="button">Cancel</button>
                         </div>
                         <div class="col-sm-12 col-md-8 mb-2">
-                            <button class="btn btn-danger btn-block" data-dismiss="modal">Delete Tax Payers Account</button>
+                            <button class="btn btn-danger btn-block" data-dismiss="modal">Delete Ministry</button>
                         </div>
                     </div>
                 </div>

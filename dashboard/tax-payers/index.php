@@ -39,67 +39,83 @@
                         <table id="datatable" width="100%" class="table nowrap table-striped table-lightfont">
                             <thead>
                                 <tr class="">
+                                    <th class="invisible"></th>
                                     <th>Ministry Name</th>
                                     <th colspan="3">Actions</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr class="">
-                                    <th>Ministry Name</th>
-                                    <th colspan="3">Actions</th>
-                                </tr>
-                            </tfoot>
                             <tbody>
                                 <tr class="">
+                                    <td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
                                     <td>Ministry of Agric</td>
-                                    <td class="action">
+                                    <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
+                                    <td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
                                     <td>Ministry of Commerce & Industries</td>
-                                    <td class="action">
+                                    <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
+                                    <td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
                                     <td>Ministry of Health</td>
-                                    <td class="action">
+                                    <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                                 <tr class="">
+                                    <td>
+                                        <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
+                                    </td>
                                     <td>Ministry of Information</td>
-                                    <td class="action">
+                                    <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
                                     </td>
-                                    <td class="action">
+                                    <td class="actions" align="right">
                                         <a class="btn btn-danger btn-sm" href="#" data-target="#delete" data-toggle="modal">Delete</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="mx-0 mt-4 pt-0 px-4 row">
+                        <div class="col-sm"></div>
+                        <div class="col-md-auto col-sm-12 mb-4">
+                            <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
+                        </div>
+                        <div class="col-md-auto col-sm-12">
+                            <button class="btn p-3 px-5 btn-danger btn-block" type="submit">Delete Selected<i class="icon-feather-trash ml-2"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +137,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Vendor's Name" placeholder="eg: johndoe" required="required" type="text">
+                                    <label for="lname">Ministry Name</label><input name="vname" class="form-control" data-error="Please input the Ministry Name" placeholder="eg: Ministry of Power" required="required" type="text">
                                 </div>
                             </div>
                         </div>

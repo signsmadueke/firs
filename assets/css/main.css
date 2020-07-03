@@ -437,6 +437,12 @@ figure {
 img {
     vertical-align: middle;
     border-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 svg:not(:root) {
@@ -514,6 +520,9 @@ input[type="checkbox"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
 }
 
 input[type="date"],
@@ -13278,6 +13287,7 @@ table.dataTable {
     margin-bottom: 6px !important;
     max-width: none !important;
     border-collapse: separate !important;
+    /* border-bottom: 1px solid rgba(83, 101, 140, 0.33); */
 }
 
 table.dataTable td,
@@ -13303,7 +13313,12 @@ table.dataTable.nowrap td {
         white-space: nowrap;
     }
 }
-
+/* 
+table th.actions,
+table td.actions {
+	text-align: right;
+}
+ */
 div.dataTables_wrapper div.dataTables_length label {
     font-weight: normal;
     text-align: left;
@@ -13935,8 +13950,8 @@ body:before {
     content: "";
     position: absolute;
     z-index: -1;
-    background: -webkit-gradient(linear, left top, right bottom, from(#007252), to(#4caf50));
-    background: linear-gradient(to bottom right, #007252, #4caf50);
+    /* background: -webkit-gradient(linear, left top, right bottom, from(#007252), to(#4caf50)); */
+    /* background: linear-gradient(to bottom right, #007252, #4caf50); */
     top: 0px;
     left: 0px;
     bottom: 0px;
@@ -14665,6 +14680,13 @@ body.menu-side-right .layout-w {
 .menu-w .logo-w {
     text-align: center;
     padding: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .menu-w .logo-w a {

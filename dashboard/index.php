@@ -784,7 +784,7 @@ $title = 'Dashboard';
                                                             <div class="element-inner-desc">
                                                                 All pending payments with ageing period and days count since payment initiated
                                                             </div>
-                                                            <a class="btn btn-link btn-underlined smaller" href="payments/pending.php"><span>View all pending payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
+                                                            <a class="btn btn-link btn-underlined smaller" href="payments/unswept.php"><span>View all pending payments</span><i class="os-icon os-icon-arrow-right4"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>

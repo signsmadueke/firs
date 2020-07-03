@@ -343,13 +343,13 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="mx-0 my-4 pt-0 px-4 row">
+                                    <div class="mx-0 mt-4 pt-0 px-4 row">
                                         <div class="col-sm"></div>
                                         <div class="col-md-auto col-sm-12 mb-4">
                                             <a href="#" onclick="selectAll()" id="checker" class="btn btn-block btn-white p-3 px-5"><i class="icon-plus mr-3"></i>Select All</a>
                                         </div>
                                         <div class="col-md-auto col-sm-12">
-                                            <button class="btn p-3 px-5 btn-primary btn-block" type="submit">Approve Selected<i class="icon-feather-check ml-2"></i></button>
+                                            <button class="btn p-3 px-5 btn-danger btn-block" type="submit">Delete Selected<i class="icon-feather-trash ml-2"></i></button>
                                         </div>
                                     </div>
                                 </div>
