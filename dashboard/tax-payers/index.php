@@ -49,7 +49,7 @@
                                     <td>
                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td>Ministry of Agric</td>
+                                    <td><a href="view.php">Ministry of Agric</a></td>
                                     <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
@@ -64,7 +64,7 @@
                                     <td>
                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td>Ministry of Commerce & Industries</td>
+                                    <td><a href="view.php">Ministry of Commerce & Industries</a></td>
                                     <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
@@ -79,7 +79,7 @@
                                     <td>
                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td>Ministry of Health</td>
+                                    <td><a href="view.php">Ministry of Health</a></td>
                                     <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
@@ -94,7 +94,7 @@
                                     <td>
                                         <input type="checkbox" class="checkbox" name="acs" data-placement="top" data-toggle="tooltip" data-original-title="Select Payment">
                                     </td>
-                                    <td>Ministry of Information</td>
+                                    <td><a href="view.php">Ministry of Information</a></td>
                                     <td class="actions" align="left">
                                         <a class="btn btn-primary btn-sm" href="view.php">View</a>
                                     </td>
@@ -126,7 +126,7 @@
 
 
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="add" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-dialog modal-centered" role="document">
             <div class="modal-content text-center">
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
@@ -155,7 +155,7 @@
         </div>
     </div>
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="edit" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-dialog modal-centered" role="document">
             <div class="modal-content text-center">
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">

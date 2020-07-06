@@ -51,7 +51,7 @@
                                     </td>
                                     <td>Market Taxes and Levies where State finance is involved</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -66,7 +66,7 @@
                                     </td>
                                     <td>Land use charge, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -81,7 +81,7 @@
                                     </td>
                                     <td>Entertainment Tax, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -96,7 +96,7 @@
                                     </td>
                                     <td>Entertainment Tax, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -111,7 +111,7 @@
                                     </td>
                                     <td>Mining, milling and quarrying fee</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -126,7 +126,7 @@
                                     </td>
                                     <td>Market Taxes and Levies where State finance is involved</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -141,7 +141,7 @@
                                     </td>
                                     <td>Land use charge, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -156,7 +156,7 @@
                                     </td>
                                     <td>Entertainment Tax, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -171,7 +171,7 @@
                                     </td>
                                     <td>Entertainment Tax, where applicable</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -186,7 +186,7 @@
                                     </td>
                                     <td>Mining, milling and quarrying fee</td>
                                     <td class="actions" align="left">
-                                        <a class="btn btn-primary btn-sm" href="view.php">View</a>
+                                        <a class="btn btn-primary btn-sm" href="#">Pay</a>
                                     </td>
                                     <td class="actions" align="center">
                                         <a class="btn btn-primary btn-grey btn-sm" href="#" data-target="#edit" data-toggle="modal">Edit</a>
@@ -216,7 +216,7 @@
 
 
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="add" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-dialog modal-centered" role="document">
             <div class="modal-content text-center">
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">
@@ -245,7 +245,7 @@
         </div>
     </div>
     <div aria-hidden="true" class="onboarding-modal modal fade animated" id="edit" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-centered" role="document">
+        <div class="modal-dialog modal-centered" role="document">
             <div class="modal-content text-center">
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="btn btn-link text-dark">Close</span><span class="os-icon os-icon-close btn-link text-dark"></span></button>
                 <div class="onboarding-content p-5 mt-5">

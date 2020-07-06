@@ -94,7 +94,7 @@ function selectAll() {
 
 $(document).ready( function () {
     $('#datatable').DataTable({
-        responsive: true
+        // responsive: true
     });
     $('#datatable-sm').DataTable({
         // paging: false
